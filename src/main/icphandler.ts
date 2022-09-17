@@ -1,13 +1,5 @@
 import { ipcMain, app } from 'electron';
-import { existsSync, fstat } from 'fs';
-import {
-  access,
-  lstat,
-  mkdir,
-  readFile,
-  writeFile,
-  copyFile,
-} from 'fs/promises';
+import { access, mkdir, readFile, writeFile, copyFile } from 'fs/promises';
 import path from 'path';
 
 const appDataDir =
@@ -67,7 +59,7 @@ const error: any = {};
 })();
 
 export default function setupIcpHandler() {
-  ipcMain.handle('loadfile', async (event, file) => {
+  ipcMain.handle('loadfile', async (_event, file) => {
     try {
       const data = await readFile(path.join(kubelDataDir, file));
       return JSON.parse(data.toString());
@@ -76,7 +68,7 @@ export default function setupIcpHandler() {
     }
   });
 
-  ipcMain.handle('savefile', async (event, file, data) => {
+  ipcMain.handle('savefile', async (_event, file, data) => {
     try {
       let dataStr = data;
       if (typeof dataStr !== 'string') {
@@ -89,7 +81,7 @@ export default function setupIcpHandler() {
     }
   });
 
-  ipcMain.handle('receiveError', async (event) => {
+  ipcMain.handle('receiveError', async () => {
     return error;
   });
 }
