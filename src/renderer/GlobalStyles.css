@@ -1,0 +1,9 @@
+@media print {
+  .hiddenPrint {
+    display: none !important;
+  }
+}
+
+.pdf-export .hiddenPrint {
+  display: none !important;
+}

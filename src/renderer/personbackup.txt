@@ -1,0 +1,352 @@
+import {
+  Button,
+  Collapse,
+  Divider,
+  InputNumber,
+  Radio,
+  Space,
+  Tabs,
+} from 'antd';
+import { MouseEventHandler, useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import {
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
+import { evalState } from 'renderer/eval/evalState';
+import { useSnapshot } from 'valtio';
+import {
+  Category,
+  CategoryData,
+  CategoryDefinition,
+  Data,
+  emptyCategory,
+  Person,
+  Phase,
+  PhaseDefinition,
+} from './models';
+import styles from './Person.module.css';
+
+const { TabPane } = Tabs;
+const { Panel } = Collapse;
+
+const calculateResult = (phase: Phase): number => {
+  const weights = [1, 0.5, 0];
+  let sumWeight = 0;
+  let numWeights = 0;
+  phase.entries.forEach((sel: number) => {
+    // ignore -1 (not set) and 3 (unknown)
+    if (sel !== -1 && sel < 3) {
+      sumWeight += weights[sel];
+      numWeights += 1;
+    }
+  });
+  return numWeights > 0 ? sumWeight / numWeights : 0;
+};
+
+const Graph = ({
+  person,
+  categoryData,
+}: {
+  person: Person;
+  categoryData: CategoryData;
+}) => {
+  const [baseline, setBaseline] = useState(15);
+  const [minValue, setMinValue] = useState(6);
+
+  const data = Object.entries(person.categories).map(([id, category]) => {
+    const totalResult = Object.values(category.phases)
+      .map(calculateResult)
+      .reduce((p: number, c: number) => p + c, 0);
+    return {
+      name: categoryData[id]?.name ?? ` Kategorie nicht gefunden (${id})`,
+      result: Math.round(100 * (totalResult + minValue)) / 100,
+      baseline,
+    };
+  });
+
+  return (
+    <div className={styles.graphContainer}>
+      <Space>
+        <InputNumber
+          addonBefore="Entwicklungsstand"
+          value={baseline}
+          onChange={setBaseline}
+          min={0}
+        />
+        <InputNumber
+          addonBefore="Min-Wert"
+          value={minValue}
+          onChange={setMinValue}
+          min={0}
+          max={18}
+        />
+      </Space>
+
+      <div style={{ height: '20px' }}> </div>
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line
+            type="linear"
+            dataKey="result"
+            stroke="#8884d8"
+            activeDot={{ r: 8 }}
+            name="Ergebnis"
+          />
+          <Line
+            type="linear"
+            dataKey="baseline"
+            stroke="#82ca9d"
+            name="Entwicklungsstand"
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+  );
+};
+
+function CategoryTab({
+  personCategory,
+  categoryDefinition,
+  onCategoryChanged,
+}: {
+  personCategory: Category;
+  categoryDefinition: CategoryDefinition;
+  onCategoryChanged: (category: Category) => void;
+}) {
+  const [highlightRow, setHighlightRow] = useState<[string | null, number]>([
+    null,
+    -1,
+  ]);
+
+  type PhaseEntry = {
+    id: string;
+    phase: Phase;
+    phaseDefinition: PhaseDefinition;
+  };
+  const phases = Object.entries(categoryDefinition.phases)
+    .map(([phaseId, phase]) => {
+      if (personCategory.phases[phaseId] == null) return undefined;
+      return {
+        id: phaseId,
+        phase: personCategory.phases[phaseId],
+        phaseDefinition: phase,
+      };
+    })
+    .filter((val) => val != null) as PhaseEntry[];
+
+  const selectionChange = (phase: string, entry: number, sel: number) => {
+    const newCategory: Category = JSON.parse(JSON.stringify(personCategory));
+    newCategory.phases[phase].entries[entry] = sel;
+    onCategoryChanged(newCategory);
+  };
+
+  const handleRowMouseEnter = (phaseId: string, rowIdx: number) => {
+    setHighlightRow([phaseId, rowIdx]);
+  };
+  const handleRowMouseLeave = () => {
+    setHighlightRow([null, -1]);
+  };
+
+  const highlightClass = (phaseId: string, rowIdx: number) => {
+    return phaseId === highlightRow[0] && highlightRow[1] === rowIdx
+      ? styles.rowHighlight
+      : '';
+  };
+  const header = (phaseEntry: PhaseEntry) => {
+    const result = calculateResult(phaseEntry.phase);
+    const phaseName = phaseEntry.phaseDefinition.name || phaseEntry.id;
+    const resultRounded = Math.round(result * 100) / 100;
+    return (
+      <span className={styles.collapseHeader}>
+        {`${categoryDefinition.name} ${phaseName}`}
+        <span
+          className={styles.collapseResult}
+        >{`Ergebnis: ${resultRounded}`}</span>
+      </span>
+    );
+  };
+
+  return (
+    <>
+      <Collapse>
+        {phases.map((phase) => (
+          <Panel header={header(phase)} key={phase.id}>
+            <div className={styles.row}>
+              <div className={styles.colFirst}>Erklärung</div>
+              <div className={styles.col}>Tut Es</div>
+              <div className={styles.col}>Teilweise</div>
+              <div className={styles.col}>Nicht</div>
+              <div className={styles.col}>Unbekannt</div>
+            </div>
+            <Divider className={styles.colHeaderDivider} />
+            {phase.phase.entries.map((row, rowIdx) => (
+              <div
+                // eslint-disable-next-line react/no-array-index-key
+                key={rowIdx}
+                className={`${styles.row} ${highlightClass(phase.id, rowIdx)}`}
+                onMouseEnter={() => handleRowMouseEnter(phase.id, rowIdx)}
+                onMouseLeave={handleRowMouseLeave}
+              >
+                <div className={styles.colFirst}>
+                  {phase.phaseDefinition.entries[rowIdx]?.description ??
+                    'Keine Beschreibung gefunden'}
+                </div>
+                <div className={styles.colContainer}>
+                  <Radio.Group buttonStyle="solid" value={row.toString()}>
+                    <div className={styles.col}>
+                      <Radio.Button
+                        value="0"
+                        onChange={() => selectionChange(phase.id, rowIdx, 0)}
+                      />
+                    </div>
+                    <div
+                      className={styles.col}
+                      onChange={() => selectionChange(phase.id, rowIdx, 1)}
+                    >
+                      <Radio.Button value="1" />
+                    </div>
+                    <div
+                      className={styles.col}
+                      onChange={() => selectionChange(phase.id, rowIdx, 2)}
+                    >
+                      <Radio.Button value="2" />
+                    </div>
+                    <div
+                      className={styles.col}
+                      onChange={() => selectionChange(phase.id, rowIdx, 3)}
+                    >
+                      <Radio.Button value="3" />
+                    </div>
+                  </Radio.Group>
+                </div>
+              </div>
+            ))}
+          </Panel>
+        ))}
+      </Collapse>
+    </>
+  );
+}
+
+type CategoryTabProps = {
+  person: Person;
+  categoryData: CategoryData;
+  onPersonChanged: (person: Person) => void;
+};
+const CategoryTabs = ({
+  person,
+  categoryData,
+  onPersonChanged,
+}: CategoryTabProps) => {
+  const callback = () => {};
+
+  const handleOnCategoryChanged = (id: string, category: Category) => {
+    const newPerson: Person = JSON.parse(JSON.stringify(person));
+    newPerson.categories[id] = category;
+    onPersonChanged(newPerson);
+  };
+
+  const categories = Object.entries(categoryData);
+  categories.forEach(([id, category]) => {
+    // add missing categories as categories might be added in the definition file
+    if (person.categories[id] == null) {
+      person.categories[id] = emptyCategory(category);
+    }
+  });
+
+  return (
+    <Tabs defaultActiveKey="0" onChange={callback} size="large">
+      {categories.map(([id, categoryDef]) => (
+        <TabPane tab={categoryDef.name} key={id}>
+          <CategoryTab
+            personCategory={person.categories[id]}
+            categoryDefinition={categoryDef}
+            onCategoryChanged={(newAttr) =>
+              handleOnCategoryChanged(id, newAttr)
+            }
+          />
+        </TabPane>
+      ))}
+    </Tabs>
+  );
+};
+
+export default function PersonEvaluation({
+  data,
+  categoryData,
+  onSavePerson,
+  isSaving,
+}: {
+  data: Data | undefined;
+  categoryData: CategoryData | undefined;
+  onSavePerson: (id: string, person: Person) => void;
+  isSaving: boolean;
+}) {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const intialPerson = id != null ? data?.people?.[id] : undefined;
+  const { person } = useSnapshot(evalState);
+  //const [person, setPerson] = useState<Person | undefined>(intialPerson);
+
+  useEffect(() => {
+    if (person == null && intialPerson != null) {
+      evalState.person = intialPerson;
+    } else if (
+      person != null &&
+      intialPerson != null &&
+      Date.parse(person.lastChanged) < Date.parse(intialPerson.lastChanged)
+    ) {
+      evalState.person = intialPerson;
+    }
+  });
+  if (id == null || data == null) {
+    navigate('/');
+    return null;
+  }
+
+  const handleOnPersonChanged = (newPerson: Person) => {
+    setPerson(newPerson);
+  };
+  if (person == null) return <h1>Error: Es wurde keine Person geladen</h1>;
+  if (categoryData == null)
+    return <h1>Error: Es wurde keine Kategorien geladen</h1>;
+  return (
+    <>
+      <div className={styles.headerContainer}>
+        <h1 className={styles.title}>{person.name}</h1>
+        <Button loading={isSaving} onClick={() => onSavePerson(id, person)}>
+          Speichern
+        </Button>
+      </div>
+
+      <CategoryTabs
+        person={person}
+        categoryData={categoryData}
+        onPersonChanged={handleOnPersonChanged}
+      />
+      <Graph person={person} categoryData={categoryData} />
+    </>
+  );
+}

@@ -1,0 +1,2442 @@
+{
+  "koerper": {
+    "name": "Körper",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "umgebungsbws": {
+    "name": "Umgebungsbws.",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "soziemot": {
+    "name": "Sozi.-Emot.",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "spieltaetigkeit": {
+    "name": "Spieltätigkeit",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "spracheliteracy": {
+    "name": "Sprache & Literacy",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "kognition": {
+    "name": "Kognition",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "grobmotorik": {
+    "name": "Grobmotorik",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  },
+  "feinmotorik": {
+    "name": "Feinmotorik",
+    "phases": {
+      "7": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "8": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "9": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "10": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "11": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "12": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "13": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "14": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "15": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "16": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "17": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      },
+      "18": {
+        "entries": [
+          {
+            "description": "Beschreibung 1"
+          },
+          {
+            "description": "Beschreibung 2"
+          },
+          {
+            "description": "Beschreibung 3"
+          },
+          {
+            "description": "Beschreibung 4"
+          },
+          {
+            "description": "Beschreibung 5"
+          },
+          {
+            "description": "Beschreibung 6"
+          },
+          {
+            "description": "Beschreibung 7"
+          }
+        ]
+      }
+    }
+  }
+}

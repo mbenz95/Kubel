@@ -1,0 +1,136 @@
+.printPageContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.printAreaContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.printArea {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 30px;
+  width: 210mm;
+}
+
+.printHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.printButton {
+  margin: 5px;
+}
+
+.printControls {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryOptionsContainer {
+  display: flex;
+  flex-direction: row;
+}
+.categoryCheckbox {
+  width: 200px;
+  flex-shrink: 0;
+}
+.categoryInput {
+  margin: 2px;
+  max-width: 300px;
+  min-width: 80px;
+  flex-shrink: 1;
+}
+
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  position: relative;
+  text-align: center;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.tableMarkerCell {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  overflow: hidden;
+}
+
+.crossed1::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent calc(50% - 1px),
+    black,
+    transparent calc(50% + 1px)
+  );
+}
+.crossed2::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top right,
+    transparent calc(50% - 1px),
+    black,
+    transparent calc(50% + 1px)
+  );
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.category {
+}
+
+/* TODO: broken sometimes! */
+.table {
+  page-break-inside: avoid;
+}
+
+/* Printing + export styles */
+@media print {
+  .printArea {
+    border: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+  .printButton {
+    display: none !important;
+  }
+}
+:global(.pdf-export) .printArea {
+  border: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+::global(.pdf-export) .printButton {
+  display: none !important;
+}
