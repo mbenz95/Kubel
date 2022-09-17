@@ -14,12 +14,13 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+import setupIcpHandler from './icphandler';
 
 class AppUpdater {
   constructor() {
     log.transports.file.level = 'info';
     autoUpdater.logger = log;
-    autoUpdater.checkForUpdatesAndNotify();
+    // autoUpdater.checkForUpdatesAndNotify();
   }
 }
 
@@ -58,7 +59,7 @@ const installExtensions = async () => {
 
 const createWindow = async () => {
   if (isDebug) {
-    await installExtensions();
+    // await installExtensions();
   }
 
   const RESOURCES_PATH = app.isPackaged
@@ -81,6 +82,8 @@ const createWindow = async () => {
     },
   });
 
+  setupIcpHandler();
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
   mainWindow.on('ready-to-show', () => {
@@ -98,8 +101,12 @@ const createWindow = async () => {
     mainWindow = null;
   });
 
-  const menuBuilder = new MenuBuilder(mainWindow);
-  menuBuilder.buildMenu();
+  if (app.isPackaged) {
+    mainWindow.removeMenu(); // disable menu
+  } else {
+    const menuBuilder = new MenuBuilder(mainWindow);
+    menuBuilder.buildMenu();
+  }
 
   // Open urls in the user's browser
   mainWindow.webContents.setWindowOpenHandler((edata) => {

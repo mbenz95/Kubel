@@ -1,5 +1,6 @@
 {
-  "description": "A foundation for scalable desktop apps",
+  "name": "kubel",
+  "description": "KuBel Application",
   "keywords": [
     "electron",
     "boilerplate",
@@ -109,12 +110,16 @@
     }
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.21.0",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^5.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0"
+    "react-router-dom": "^6.4.0",
+    "recharts": "^2.1.14",
+    "valtio": "^1.7.0"
   },
   "devDependencies": {
     "@electron/notarize": "^1.2.3",
@@ -130,6 +135,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-test-renderer": "^18.0.0",
     "@types/terser-webpack-plugin": "^5.0.4",
+    "@types/uuid": "^8.3.4",
     "@types/webpack-bundle-analyzer": "^4.4.2",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
@@ -157,6 +163,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-valtio": "^0.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
@@ -186,14 +193,15 @@
     "webpack-merge": "^5.8.0"
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "KuBel",
+    "appId": "wtf.rudeirer.KuBel",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
       "dist",
       "node_modules",
-      "package.json"
+      "package.json",
+      "resources/"
     ],
     "afterSign": ".erb/scripts/notarize.js",
     "mac": {
