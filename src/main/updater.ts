@@ -57,6 +57,7 @@ export async function runUpdate(): Promise<UpdateCheckResult | null> {
     log.error('Tried to update but application is not packaged!');
     return null;
   }
+  resetUpdateState();
   autoUpdater.autoDownload = true;
   autoUpdater.autoInstallOnAppQuit = true;
   return autoUpdater.checkForUpdatesAndNotify();

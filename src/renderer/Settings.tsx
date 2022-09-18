@@ -28,11 +28,22 @@ export default function SettingsPage() {
 function UpdateSection() {
   const updateServiceState = useSnapshot(updateState);
   const [updateInfo, setUpdateInfo] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [isLoadingUpdate, setIsLoadingUpdate] = useState(false);
+  const [requestUpdate, setRequestUpdate] = useState(false);
+  useEffect(() => {
+    // make sure to reset download text when the downloaded flag changes
+    if (requestUpdate && updateServiceState.updateDownloaded) {
+      setIsLoadingUpdate(false);
+    }
+  }, [requestUpdate, updateServiceState.updateDownloaded]);
 
   const runUpdate = async () => {
-    setLoading(true);
+    setIsLoadingUpdate(true);
     setUpdateInfo(null);
+    setRequestUpdate(true);
+    let willUpdate =
+      updateServiceState.isNewVersionAvailable &&
+      !updateServiceState.updateDownloaded;
     const result: UpdateCheckResult | null =
       await window.electron.ipcRenderer.invoke('runUpdate');
     if (result != null) {
@@ -41,16 +52,16 @@ function UpdateSection() {
         `Aktuellste Version: ${result.version} vom ${date.toLocaleString()}`
       );
     } else {
+      willUpdate = false;
       setUpdateInfo('Keine Updates gefunden');
     }
-    await sleep(500);
-    setLoading(false);
+    if (!willUpdate) setIsLoadingUpdate(false);
   };
 
   return (
     <>
       <h4>Aktuelle Version: {updateServiceState.currentVersion}</h4>
-      <Button loading={loading} onClick={runUpdate}>
+      <Button loading={isLoadingUpdate} onClick={runUpdate}>
         Update Kubel
       </Button>
       {updateInfo != null ? (
@@ -58,7 +69,25 @@ function UpdateSection() {
           {updateInfo}
         </Text>
       ) : null}
-      {updateServiceState.updateDownloaded ? (
+      {requestUpdate && updateServiceState.updateDownloaded ? (
+        <Alert
+          type="success"
+          message="Das Update wurde heruntergeladen. Es wird beim beenden der
+        Anwendung automatisch installiert."
+          className={styles.updateAlert}
+        />
+      ) : null}
+      {requestUpdate &&
+      isLoadingUpdate &&
+      !updateServiceState.updateDownloaded ? (
+        <Alert
+          message="Der Download wurde gestartet. Das kann einen Moment dauern..."
+          type="info"
+        />
+      ) : null}
+      {requestUpdate &&
+      !updateServiceState.updateDownloaded &&
+      updateServiceState.isNewVersionAvailable ? (
         <Alert
           type="success"
           message="Das Update wurde heruntergeladen. Es wird beim beenden der
