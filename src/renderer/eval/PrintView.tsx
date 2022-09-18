@@ -26,17 +26,18 @@ import '../GlobalStyles.css';
 
 const { Title, Text } = Typography;
 
+type PrinterCategoryOption = {
+  enabled: boolean;
+  min: number;
+  max: number;
+};
 type PrinterState = {
   showGraph: boolean;
   tablePerRow: number;
   categories: { [id: string]: PrinterCategoryOption };
   fontSizeEm: number;
 };
-type PrinterCategoryOption = {
-  enabled: boolean;
-  min: number;
-  max: number;
-};
+
 const printerState = proxy<PrinterState>({
   showGraph: true,
   categories: {},

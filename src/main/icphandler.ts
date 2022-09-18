@@ -1,6 +1,7 @@
 import { ipcMain, app } from 'electron';
 import { access, mkdir, readFile, writeFile, copyFile } from 'fs/promises';
 import path from 'path';
+import { checkUpdate, runUpdate } from './updater';
 
 const appDataDir =
   process.env.APPDATA ||
@@ -83,5 +84,21 @@ export default function setupIcpHandler() {
 
   ipcMain.handle('receiveError', async () => {
     return error;
+  });
+
+  ipcMain.handle('getVersion', async () => {
+    if (app.isPackaged) {
+      return app.getVersion();
+    }
+    return `Application is not packaged. Electron Version: ${app.getVersion()}`;
+  });
+
+  ipcMain.handle('checkUpdate', async () => {
+    return checkUpdate();
+  });
+
+  ipcMain.handle('runUpdate', async () => {
+    const info = await runUpdate();
+    return info?.updateInfo;
   });
 }

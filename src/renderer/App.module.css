@@ -75,3 +75,16 @@ a:hover {
   flex-direction: row;
   align-items: baseline;
 }
+
+.settingsLink {
+  margin-left: auto;
+  margin-right: -20px;
+  align-self: center;
+}
+.settingsButton {
+  border: none;
+}
+
+.settingsBadge {
+  color: #40a3ff;
+}

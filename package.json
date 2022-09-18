@@ -41,6 +41,7 @@
     "postinstall": "ts-node .erb/scripts/check-native-dep.js && electron-builder install-app-deps && cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.renderer.dev.dll.ts",
     "lint": "cross-env NODE_ENV=development eslint . --ext .js,.jsx,.ts,.tsx",
     "package": "ts-node ./.erb/scripts/clean.js dist && npm run build && electron-builder build --publish never",
+    "release": "ts-node ./.erb/scripts/clean.js dist && npm run build && electron-builder build --publish always",
     "prepare": "husky install",
     "rebuild": "electron-rebuild --parallel --types prod,dev,optional --module-dir release/app",
     "start": "ts-node ./.erb/scripts/check-port-in-use.js && npm run start:renderer",
@@ -119,6 +120,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
     "recharts": "^2.1.14",
+    "semver": "^7.3.7",
     "valtio": "^1.7.0"
   },
   "devDependencies": {
@@ -252,9 +254,8 @@
       "./assets/**"
     ],
     "publish": {
-      "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "provider": "s3",
+      "bucket": "kubel-releases"
     }
   },
   "collective": {

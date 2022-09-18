@@ -6,10 +6,15 @@ import {
   Link,
   useNavigate,
 } from 'react-router-dom';
-import { Button, Layout } from 'antd';
+import { Badge, Button, Layout } from 'antd';
 import { Content, Header } from 'antd/lib/layout/layout';
-import { ArrowLeftOutlined } from '@ant-design/icons';
+import {
+  ArrowLeftOutlined,
+  InfoCircleOutlined,
+  SettingOutlined,
+} from '@ant-design/icons';
 import { v4 as uuidv4 } from 'uuid';
+import { useSnapshot } from 'valtio';
 import PersonEvaluation from './eval/Evaluation';
 import { CategoryData, Data, Person } from './eval/models';
 import PeopleList from './eval/PeopleList';
@@ -18,10 +23,8 @@ import PrintView from './eval/PrintView';
 import { sleep } from './eval/Utils';
 import styles from './App.module.css';
 import 'antd/dist/antd.css';
-
-declare module 'valtio' {
-  function useSnapshot<T extends object>(p: T): T;
-}
+import SettingsPage from './Settings';
+import { initUpdateService, updateState } from './update/UpdateService';
 
 function showError(err: any) {
   alert(err);
@@ -76,6 +79,9 @@ function RoutedApp() {
   const [isSaving, setIsSaving] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
+    initUpdateService();
+  }, []);
+  useEffect(() => {
     // display initial errors if any
     (async () => {
       const error = await window.electron.ipcRenderer.invoke('receiveError');
@@ -106,7 +112,7 @@ function RoutedApp() {
     await updatePeopleFile(id, undefined);
     const newData = JSON.parse(JSON.stringify(data));
     delete newData.people[id];
-    await sleep()
+    await sleep();
     setData(newData);
     setIsSaving(false);
   };
@@ -135,6 +141,7 @@ function RoutedApp() {
           <Link to="/" style={{ fontSize: 'xx-large', color: 'white' }}>
             Project: KuBel
           </Link>
+          <SettingsLink />
         </div>
       </Header>
       <Content style={{ padding: '0 50px' }}>
@@ -163,8 +170,35 @@ function RoutedApp() {
             }
           />
           <Route path="/print/:id" element={<PrintView />} />
+          <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </Content>
     </Layout>
+  );
+}
+
+function SettingsLink() {
+  const updateServiceState = useSnapshot(updateState);
+  return (
+    <Link to="/settings" className={styles.settingsLink}>
+      <Badge
+        count={
+          updateServiceState.isNewVersionAvailable ? (
+            <InfoCircleOutlined className={styles.settingsBadge} />
+          ) : (
+            0
+          )
+        }
+        offset={[-6, 6]}
+      >
+        <Button
+          className={styles.settingsButton}
+          shape="circle"
+          ghost
+          size="large"
+          icon={<SettingOutlined />}
+        />
+      </Badge>
+    </Link>
   );
 }
