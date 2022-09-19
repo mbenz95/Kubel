@@ -1,3 +1,4 @@
+import { notification } from 'antd';
 import semver from 'semver';
 import { proxy } from 'valtio';
 
@@ -8,6 +9,7 @@ type UpdateState = {
   updateVersion: string | null;
   updateDownloaded: boolean;
   error: string | null;
+  lastEvent: string;
 };
 
 type UpdateServiceState = {
@@ -16,6 +18,7 @@ type UpdateServiceState = {
   updateVersion: string | null;
   error: string | null;
   updateDownloaded: boolean;
+  lastEvent: string;
 };
 
 export const updateState = proxy<UpdateServiceState>({
@@ -24,6 +27,7 @@ export const updateState = proxy<UpdateServiceState>({
   updateVersion: null,
   error: null,
   updateDownloaded: false,
+  lastEvent: 'none',
 });
 
 export async function initUpdateService() {
@@ -37,12 +41,22 @@ export async function initUpdateService() {
     updateState.error = updateInfo.error;
     updateState.updateVersion = updateInfo.updateVersion;
     updateState.updateDownloaded = updateInfo.updateDownloaded;
+    updateState.lastEvent = updateInfo.lastEvent;
     if (updateInfo.isUpdateAvailable && updateInfo.updateVersion != null) {
       const hasNewVersion = semver.gt(
         updateInfo.updateVersion,
         updateState.currentVersion
       );
       updateState.isNewVersionAvailable = hasNewVersion;
+
+      // show notification
+      if (
+        hasNewVersion &&
+        updateInfo.updateVersion != null &&
+        updateInfo.lastEvent === 'update-downloaded'
+      ) {
+        openNotification(updateState.updateVersion ?? '?');
+      }
     }
   });
   await window.electron.ipcRenderer.invoke('checkUpdate');
@@ -51,4 +65,11 @@ export async function initUpdateService() {
 async function loadVersion(): Promise<string> {
   const currentVersion = await window.electron.ipcRenderer.invoke('getVersion');
   return currentVersion;
+}
+
+function openNotification(version: string) {
+  notification.open({
+    message: 'Update Verfügbar!',
+    description: `Das neue Update auf Version ${version} wurde heruntergeladen. Starten Sie die Anwendung neu um das Update zu intallieren.`,
+  });
 }

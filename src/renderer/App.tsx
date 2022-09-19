@@ -81,6 +81,7 @@ function RoutedApp() {
   useEffect(() => {
     initUpdateService();
   }, []);
+
   useEffect(() => {
     // display initial errors if any
     (async () => {

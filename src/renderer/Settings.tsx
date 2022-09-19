@@ -2,7 +2,6 @@ import { Alert, Button, Card, Typography } from 'antd';
 import Title from 'antd/lib/typography/Title';
 import { useEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
-import { sleep } from './eval/Utils';
 import { updateState } from './update/UpdateService';
 import styles from './Settings.module.css';
 
@@ -29,18 +28,16 @@ function UpdateSection() {
   const updateServiceState = useSnapshot(updateState);
   const [updateInfo, setUpdateInfo] = useState<string | null>(null);
   const [isLoadingUpdate, setIsLoadingUpdate] = useState(false);
-  const [requestUpdate, setRequestUpdate] = useState(false);
   useEffect(() => {
-    // make sure to reset download text when the downloaded flag changes
-    if (requestUpdate && updateServiceState.updateDownloaded) {
+    // 'hack' to ensure we reset the loading state on the button once the update has downloaded
+    if (updateServiceState.lastEvent === 'update-downloaded') {
       setIsLoadingUpdate(false);
     }
-  }, [requestUpdate, updateServiceState.updateDownloaded]);
+  }, [updateServiceState.lastEvent]);
 
   const runUpdate = async () => {
     setIsLoadingUpdate(true);
     setUpdateInfo(null);
-    setRequestUpdate(true);
     let willUpdate =
       updateServiceState.isNewVersionAvailable &&
       !updateServiceState.updateDownloaded;
@@ -69,7 +66,7 @@ function UpdateSection() {
           {updateInfo}
         </Text>
       ) : null}
-      {requestUpdate && updateServiceState.updateDownloaded ? (
+      {updateServiceState.updateDownloaded ? (
         <Alert
           type="success"
           message="Das Update wurde heruntergeladen. Es wird beim beenden der
@@ -77,22 +74,10 @@ function UpdateSection() {
           className={styles.updateAlert}
         />
       ) : null}
-      {requestUpdate &&
-      isLoadingUpdate &&
-      !updateServiceState.updateDownloaded ? (
+      {isLoadingUpdate && !updateServiceState.updateDownloaded ? (
         <Alert
           message="Der Download wurde gestartet. Das kann einen Moment dauern..."
           type="info"
-        />
-      ) : null}
-      {requestUpdate &&
-      !updateServiceState.updateDownloaded &&
-      updateServiceState.isNewVersionAvailable ? (
-        <Alert
-          type="success"
-          message="Das Update wurde heruntergeladen. Es wird beim beenden der
-        Anwendung automatisch installiert."
-          className={styles.updateAlert}
         />
       ) : null}
       {updateServiceState.isNewVersionAvailable &&

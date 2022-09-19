@@ -9,11 +9,13 @@ export const updateState: {
   updateVersion: string | null;
   updateDownloaded: boolean;
   error: string | null;
+  lastEvent: string;
 } = {
   isUpdateAvailable: false,
   updateVersion: null,
   updateDownloaded: false,
   error: null,
+  lastEvent: 'none',
 };
 
 export function initUpdater(win: BrowserWindow) {
@@ -26,17 +28,20 @@ export function initUpdater(win: BrowserWindow) {
   autoUpdater.on('error', (err) => {
     log.error(err);
     updateState.error = `${err.name}: ${err.message}`;
+    updateState.lastEvent = 'error';
     win.webContents.send('updater-info', updateState);
   });
   autoUpdater.on('update-available', (info) => {
     log.info(`Update available: ${info.version}`);
     updateState.isUpdateAvailable = true;
     updateState.updateVersion = info.version;
+    updateState.lastEvent = 'update-available';
     win.webContents.send('updater-info', updateState);
   });
   autoUpdater.on('update-downloaded', (info) => {
     log.info(`Update downloaded: ${info.version}`);
     updateState.updateDownloaded = true;
+    updateState.lastEvent = 'update-downloaded';
     win.webContents.send('updater-info', updateState);
   });
 }
