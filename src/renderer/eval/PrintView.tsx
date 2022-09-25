@@ -106,6 +106,8 @@ export default function PrintView() {
   const onPrintClicked = () => {
     window.print();
   };
+  /*
+    // TODO: export pdf
   const onSavePdfClick = async () => {
     const body = document.body;
     const opt = {
@@ -121,6 +123,8 @@ export default function PrintView() {
     // await sleep(10000)
     // document.body.classList.remove('pdf-export') fuck....
   };
+  */
+
   return (
     <div className={styles.printPageContainer}>
       <div className={`hiddenPrint ${styles.printControls}`}>
@@ -134,16 +138,6 @@ export default function PrintView() {
               icon={<PrinterOutlined />}
             >
               Drucken
-            </Button>
-          </Affix>
-          <Affix offsetTop={5}>
-            <Button
-              onClick={onSavePdfClick}
-              type="primary"
-              className={styles.printButton}
-              icon={<PrinterOutlined />}
-            >
-              Als PDF speichern
             </Button>
           </Affix>
         </div>
@@ -200,29 +194,11 @@ export default function PrintView() {
             value={state.tablePerRow}
             onChange={(v) => {
               printerState.tablePerRow = v;
+              printerState.fontSizeEm = getFontSizeForTablePerRow(v);
             }}
             min={1}
             max={4}
             marks={tablePerRowMarks}
-            style={{ flexGrow: '1' }}
-          />
-        </div>
-        <div className={styles.sliderContainer}>
-          <Text>Schriftgröße</Text>
-          <Slider
-            defaultValue={10}
-            value={state.fontSizeEm * 10}
-            onChange={(v) => {
-              printerState.fontSizeEm = v / 10;
-            }}
-            min={1}
-            max={20}
-            step={2}
-            marks={fontSizeRowMarks}
-            tooltip={{
-              formatter: (v) =>
-                v === undefined ? undefined : (v / 10).toFixed(1),
-            }}
             style={{ flexGrow: '1' }}
           />
         </div>
@@ -376,4 +352,15 @@ function getSizeStylesForFontSize(fontSizeEm: number): {
     minWidth: sizePx,
     minHeight: sizePx,
   };
+}
+
+function getFontSizeForTablePerRow(tablesPerRow: number): number {
+  const mapping: { [key: number]: number } = {
+    1: 1.2,
+    2: 1.2,
+    3: 0.8,
+    4: 0.6,
+  };
+  const defaultSize = 1.0;
+  return mapping[tablesPerRow] ?? defaultSize;
 }
