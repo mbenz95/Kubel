@@ -89,6 +89,7 @@ export function emptyPerson(name: string, categoryData: CategoryData): Person {
 }
 
 export enum Selection {
+  Unset = -1,
   Do = 0,
   Partially = 1,
   Dont = 2,

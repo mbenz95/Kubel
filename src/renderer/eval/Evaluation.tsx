@@ -17,7 +17,7 @@ import {
   Tooltip,
   Typography,
 } from 'antd';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { evalState } from 'renderer/eval/evalState';
 import { useSnapshot } from 'valtio';
@@ -32,9 +32,11 @@ import {
   Selection,
   Category,
   BIRTHDAY_DATE_FORMAT,
+  Phases,
+  Phase,
 } from './models';
 import styles from './Person.module.css';
-import { createPhaseEntries, PhaseEntry } from './Utils';
+import { createPhaseEntries, filterPhasesByAge, PhaseEntry } from './Utils';
 
 const { Panel } = Collapse;
 
@@ -100,7 +102,13 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
     string | null
   >(null);
 
-  const phases = createPhaseEntries(categoryDefinition, personCategory);
+  const phases = useMemo(() => {
+    const filteredPhases = filterPhasesByAge(
+      person.birthday,
+      personCategory.phases
+    );
+    return createPhaseEntries(categoryDefinition, filteredPhases);
+  }, [person.birthday, personCategory, categoryDefinition]);
 
   const selectionChange = (phase: string, entry: number, sel: Selection) => {
     // const newCategory: Category = JSON.parse(JSON.stringify(personCategory));

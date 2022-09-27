@@ -11,8 +11,9 @@ import {
 } from 'recharts';
 import { useSnapshot } from 'valtio';
 import { evalState } from './evalState';
-import { DisplaySettings, Person, Phase } from './models';
+import { DisplaySettings, Person, Phase, Selection } from './models';
 import styles from './Person.module.css';
+import { filterPhasesByAge } from './Utils';
 
 export const Graph = ({ showControls }: { showControls: boolean }) => {
   const { person, categoryData } = useSnapshot(evalState);
@@ -29,9 +30,10 @@ export const Graph = ({ showControls }: { showControls: boolean }) => {
   if (person == null || categoryData == null) throw new Error('no data');
 
   const data = Object.entries(person.categories).map(([id, category]) => {
-    const totalResult = Object.values(category.phases)
+    const filteredPhases = filterPhasesByAge(person.birthday, category.phases);
+    const totalResult = Object.values(filteredPhases)
       .map(calculateResult)
-      .reduce((p: number, c: number) => p + c, 0);
+      .reduce((p, c) => p + c, 0);
     return {
       name: categoryData[id]?.name ?? ` Kategorie nicht gefunden (${id})`,
       result: Math.round(100 * (totalResult + minValue)) / 100,
@@ -102,11 +104,12 @@ export const Graph = ({ showControls }: { showControls: boolean }) => {
 
 export function calculateResult(phase: Phase): number {
   const weights = [1, 0.5, 0];
+  const validSelections = [Selection.Do, Selection.Partially, Selection.Dont];
   let sumWeight = 0;
   let numWeights = 0;
   phase.entries.forEach((sel: number) => {
     // ignore -1 (not set) and 3 (unknown)
-    if (sel !== -1 && sel < 3) {
+    if (validSelections.includes(sel)) {
       sumWeight += weights[sel];
       numWeights += 1;
     }

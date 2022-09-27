@@ -15,12 +15,11 @@ import { SliderMarks } from 'antd/lib/slider';
 import { PrinterOutlined } from '@ant-design/icons';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import html2pdf from 'html2pdf.js';
 import { v4 as uuidv4 } from 'uuid';
 import { Graph } from './Graph';
 import { evalState } from './evalState';
 import { CategoryData } from './models';
-import { createPhaseEntries, PhaseEntry, sleep } from './Utils';
+import { createPhaseEntries, getPhaseForBirthday, PhaseEntry } from './Utils';
 import styles from './PrintView.module.css';
 import '../GlobalStyles.css';
 
@@ -66,16 +65,6 @@ function PrintCategories() {
   );
 }
 
-function minMaxKey(obj: { [key: string]: unknown }): [number, number] {
-  const keys = Object.keys(obj)
-    .map((k) => parseInt(k, 10))
-    .filter((v) => !Number.isNaN(v));
-  if (keys.length === 0) return [7, 18];
-  const min = Math.min(...keys);
-  const max = Math.max(...keys);
-  return [min, max];
-}
-
 export default function PrintView() {
   const evalStateSnapshot = useSnapshot(evalState);
   const { person, categoryData: catData } = evalStateSnapshot;
@@ -86,11 +75,11 @@ export default function PrintView() {
     printerState.showGraph = true;
     const printerOptions: { [id: string]: PrinterCategoryOption } = {};
     Object.keys(categories).forEach((catKey) => {
-      const [min, max] = minMaxKey(categories[catKey].phases);
+      const [min, max] = minMaxKey(person?.birthday, categories[catKey].phases);
       printerOptions[catKey] = { enabled: true, min, max };
     });
     printerState.categories = printerOptions;
-  }, [evalStateSnapshot, categories]);
+  }, [evalStateSnapshot, categories, person?.birthday]);
   const tablePerRowMarks: SliderMarks = {
     1: '1',
     2: '2',
@@ -224,7 +213,7 @@ function PrintCategory({ categoryId }: { categoryId: string }) {
   if (person == null || categoryData == null) return <></>;
   const categoryDefinition = categoryData[categoryId];
   const personCategory = person.categories[categoryId];
-  const phases = createPhaseEntries(categoryDefinition, personCategory);
+  const phases = createPhaseEntries(categoryDefinition, personCategory.phases);
   const span = 24 / state.tablePerRow;
   return (
     <div className={styles.category}>
@@ -363,4 +352,19 @@ function getFontSizeForTablePerRow(tablesPerRow: number): number {
   };
   const defaultSize = 1.0;
   return mapping[tablesPerRow] ?? defaultSize;
+}
+
+function minMaxKey(
+  birthday: string | undefined,
+  obj: { [key: string]: unknown }
+): [number, number] {
+  const phase =
+    birthday == null ? Number.MAX_SAFE_INTEGER : getPhaseForBirthday(birthday);
+  const keys = Object.keys(obj)
+    .map((k) => parseInt(k, 10))
+    .filter((v) => !Number.isNaN(v));
+  if (keys.length === 0) return [7, 18];
+  const min = Math.min(...keys);
+  const max = Math.max(...keys);
+  return [min, Math.min(phase, max)];
 }
