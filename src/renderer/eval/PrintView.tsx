@@ -80,12 +80,6 @@ export default function PrintView() {
     });
     printerState.categories = printerOptions;
   }, [evalStateSnapshot, categories, person?.birthday]);
-  const tablePerRowMarks: SliderMarks = {
-    1: '1',
-    2: '2',
-    3: '3',
-    4: '4',
-  };
   const fontSizeRowMarks: SliderMarks = {};
   for (let i = 2; i < 20; i += 2) {
     // 0.1 to 2.0
@@ -130,69 +124,9 @@ export default function PrintView() {
             </Button>
           </Affix>
         </div>
-        <Title level={5}>Einstellungen</Title>
-        {Object.entries(categories).map(([catId, categoryData]) => (
-          <div key={catId} className={styles.categoryOptionsContainer}>
-            <Checkbox
-              className={styles.categoryCheckbox}
-              checked={state.categories[catId]?.enabled ?? false}
-              onChange={(e) => {
-                printerState.categories[catId].enabled = e.target.checked;
-              }}
-            >
-              {categoryData.name}
-            </Checkbox>
-            <Input
-              className={styles.categoryInput}
-              type="number"
-              placeholder="von"
-              value={state.categories[catId]?.min ?? 0}
-              onChange={(e) => {
-                printerState.categories[catId].min = parseInt(
-                  e.target.value,
-                  10
-                );
-              }}
-            />
-            <Input
-              className={styles.categoryInput}
-              type="number"
-              placeholder="bis"
-              value={state.categories[catId]?.max ?? 0}
-              onChange={(e) => {
-                printerState.categories[catId].max = parseInt(
-                  e.target.value,
-                  10
-                );
-              }}
-            />
-          </div>
-        ))}
-        <Checkbox
-          checked={state.showGraph}
-          onChange={(e) => {
-            printerState.showGraph = e.target.checked;
-          }}
-        >
-          <Title level={4}>Graph anzeigen</Title>
-        </Checkbox>
-        <div className={styles.sliderContainer}>
-          <Text>Tabellen pro Zeile</Text>
-          <Slider
-            defaultValue={2}
-            value={state.tablePerRow}
-            onChange={(v) => {
-              printerState.tablePerRow = v;
-              printerState.fontSizeEm = getFontSizeForTablePerRow(v);
-            }}
-            min={1}
-            max={4}
-            marks={tablePerRowMarks}
-            style={{ flexGrow: '1' }}
-          />
-        </div>
-        <Divider />
       </div>
+      <PrintViewControls />
+      <Divider />
       <div className={styles.printAreaContainer}>
         <div className={styles.printArea}>
           <p style={{ float: 'right' }}>
@@ -207,28 +141,102 @@ export default function PrintView() {
   );
 }
 
+function PrintViewControls() {
+  const evalStateSnapshot = useSnapshot(evalState);
+  const { categoryData: catData } = evalStateSnapshot;
+  const categories: CategoryData = catData ?? {};
+  const state = useSnapshot(printerState);
+  const tablePerRowMarks: SliderMarks = {
+    1: '1',
+    2: '2',
+    3: '3',
+    4: '4',
+  };
+  return (
+    <>
+      <Title level={5}>Einstellungen</Title>
+      {Object.entries(categories).map(([catId, categoryData]) => (
+        <div key={catId} className={styles.categoryOptionsContainer}>
+          <Checkbox
+            className={styles.categoryCheckbox}
+            checked={state.categories[catId]?.enabled ?? false}
+            onChange={(e) => {
+              printerState.categories[catId].enabled = e.target.checked;
+            }}
+          >
+            {categoryData.name}
+          </Checkbox>
+          <Input
+            className={styles.categoryInput}
+            type="number"
+            placeholder="von"
+            value={state.categories[catId]?.min ?? 0}
+            onChange={(e) => {
+              printerState.categories[catId].min = parseInt(e.target.value, 10);
+            }}
+          />
+          <Input
+            className={styles.categoryInput}
+            type="number"
+            placeholder="bis"
+            value={state.categories[catId]?.max ?? 0}
+            onChange={(e) => {
+              printerState.categories[catId].max = parseInt(e.target.value, 10);
+            }}
+          />
+        </div>
+      ))}
+      <Checkbox
+        checked={state.showGraph}
+        onChange={(e) => {
+          printerState.showGraph = e.target.checked;
+        }}
+      >
+        <Title level={4}>Graph anzeigen</Title>
+      </Checkbox>
+      <div className={styles.sliderContainer}>
+        <Text>Tabellen pro Zeile</Text>
+        <Slider
+          defaultValue={2}
+          value={state.tablePerRow}
+          onChange={(v) => {
+            printerState.tablePerRow = v;
+            printerState.fontSizeEm = getFontSizeForTablePerRow(v);
+          }}
+          min={1}
+          max={4}
+          marks={tablePerRowMarks}
+          style={{ flexGrow: '1' }}
+        />
+      </div>
+    </>
+  );
+}
+
 function PrintCategory({ categoryId }: { categoryId: string }) {
   const { person, categoryData } = useSnapshot(evalState);
   const state = useSnapshot(printerState);
   if (person == null || categoryData == null) return <></>;
   const categoryDefinition = categoryData[categoryId];
   const personCategory = person.categories[categoryId];
-  const phases = createPhaseEntries(categoryDefinition, personCategory.phases);
-  const span = 24 / state.tablePerRow;
+  const printerCategoryOption = state.categories[categoryId];
+  const tablePerRow = state.tablePerRow;
+  const phases = createPhaseEntries(
+    categoryDefinition,
+    personCategory.phases
+  ).filter((p) => displayPhase(printerCategoryOption, p));
+  const span = 24 / tablePerRow;
   return (
     <div className={styles.category}>
       <Row gutter={24}>
-        {phases
-          .filter((p) => displayPhase(state, categoryId, p))
-          .map((phase) => (
-            <Col key={phase.id} span={span} style={{ marginTop: '10px' }}>
-              <Title level={5} style={{ marginBottom: '-1px' }}>
-                {categoryDefinition.name}{' '}
-                {phase.phaseDefinition.name || phase.id}
-              </Title>
-              <SimpleTable phaseEntry={phase} />
-            </Col>
-          ))}
+        {phases.map((phase) => (
+          <Col key={phase.id} span={span} style={{ marginTop: '10px' }}>
+            <Title level={5} style={{ marginBottom: '-1px' }}>
+              {categoryDefinition.name} {phase.phaseDefinition.name || phase.id}
+            </Title>
+            <SimpleTable phaseEntry={phase} />
+          </Col>
+        ))}
       </Row>
     </div>
   );
@@ -319,12 +327,11 @@ function SimpleTable({ phaseEntry }: { phaseEntry: PhaseEntry }) {
 }
 
 function displayPhase(
-  state: PrinterState,
-  categoryId: string,
+  printerCategoryOption: PrinterCategoryOption,
   phase: PhaseEntry
 ): boolean {
   const key = parseInt(phase.id, 10);
-  const limits = state.categories[categoryId];
+  const limits = printerCategoryOption;
   if (limits == null) return false;
   return limits.min <= key && key <= limits.max;
 }

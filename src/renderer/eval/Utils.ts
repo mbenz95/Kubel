@@ -1,5 +1,6 @@
 import moment from 'moment';
 import {
+  BIRTHDAY_DATE_FORMAT,
   Category,
   CategoryDefinition,
   Phase,
@@ -61,13 +62,13 @@ export function getPhasesForAgeInMonths(ageInMonths: number): number {
 }
 
 export function getPhaseForBirthday(birthday: string): number {
-  const birthdayMoment = moment(birthday);
+  const birthdayMoment = moment(birthday, BIRTHDAY_DATE_FORMAT);
   const now = moment();
   const diffMonth = now.diff(birthdayMoment, 'months');
   return getPhasesForAgeInMonths(diffMonth);
 }
 
-export function filterPhasesByAge<T>(
+export function filterPhasesByAge(
   birthday: string | undefined,
   phases: Phases
 ): Phases {
