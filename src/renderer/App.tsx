@@ -20,7 +20,7 @@ import { CategoryData, Data, Person } from './eval/models';
 import PeopleList from './eval/PeopleList';
 import {} from './preload';
 import PrintView from './eval/PrintView';
-import { sleep } from './eval/Utils';
+import { sleep } from './Utils';
 import styles from './App.module.css';
 import 'antd/dist/antd.css';
 import SettingsPage from './Settings';

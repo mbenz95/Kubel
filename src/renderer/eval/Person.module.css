@@ -30,6 +30,11 @@
   background-color: rgb(245, 245, 255);
 }
 
+.phaseHighlight > :global(.ant-collapse-header) {
+  border: 2px solid rgb(47, 253, 47);
+  border-radius: 3px;
+}
+
 .col {
   display: inline-block;
   flex-grow: 0;
@@ -50,6 +55,7 @@
 }
 .collapseResult {
   float: right;
+  margin-left: 30px;
 }
 
 .graphContainer {

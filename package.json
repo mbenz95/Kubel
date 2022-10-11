@@ -48,7 +48,8 @@
     "start:main": "cross-env NODE_ENV=development electronmon -r ts-node/register/transpile-only .",
     "start:preload": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.preload.dev.ts",
     "start:renderer": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./.erb/configs/webpack.config.renderer.dev.ts",
-    "test": "jest"
+    "test": "jest",
+    "uploadChangelog": "node uploadChangelog.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -119,6 +120,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
+    "react-markdown": "^8.0.3",
     "recharts": "^2.1.14",
     "semver": "^7.3.7",
     "valtio": "^1.7.0"
@@ -126,6 +128,7 @@
   "devDependencies": {
     "@electron/notarize": "^1.2.3",
     "@electron/rebuild": "^3.2.10",
+    "@aws-sdk/client-s3": "^3.186.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@svgr/webpack": "^6.3.1",
     "@teamsupercell/typings-for-css-modules-loader": "^2.5.1",

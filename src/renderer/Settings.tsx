@@ -1,11 +1,13 @@
-import { Alert, Button, Card, Typography } from 'antd';
+import { Alert, Button, Card, Collapse, Typography } from 'antd';
 import Title from 'antd/lib/typography/Title';
 import { useEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
+import ReactMarkdown from 'react-markdown';
 import { updateState } from './update/UpdateService';
 import styles from './Settings.module.css';
 
 const { Text } = Typography;
+const { Panel } = Collapse;
 
 type UpdateCheckResult = {
   readonly version: string;
@@ -91,6 +93,31 @@ function UpdateSection() {
           className={styles.updateAlert}
         />
       ) : null}
+
+      <Changelog />
+    </>
+  );
+}
+
+function Changelog() {
+  const [changelog, setChangelog] = useState('');
+  useEffect(() => {
+    const loadData = async () => {
+      const data = await fetch(
+        'https://kubel-releases.s3.eu-central-1.amazonaws.com/CHANGELOG.md'
+      );
+      const text = await data.text();
+      setChangelog(text);
+    };
+    loadData();
+  });
+  return (
+    <>
+      <Collapse style={{ marginTop: '20px' }}>
+        <Panel header="Changelog" key="1">
+          <ReactMarkdown>{changelog}</ReactMarkdown>
+        </Panel>
+      </Collapse>
     </>
   );
 }

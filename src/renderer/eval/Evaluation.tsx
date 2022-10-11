@@ -32,13 +32,16 @@ import {
   Selection,
   Category,
   BIRTHDAY_DATE_FORMAT,
-  Phases,
-  Phase,
 } from './models';
 import styles from './Person.module.css';
-import { createPhaseEntries, filterPhasesByAge, PhaseEntry } from './Utils';
+import {
+  createPhaseEntries,
+  getCurrentPhaseByBirthday,
+  PhaseEntry,
+} from './Utils';
 
 const { Panel } = Collapse;
+const { Text } = Typography;
 
 const handleAutomaticPhaseCompletion = (
   category: Category,
@@ -103,12 +106,13 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
   >(null);
 
   const phases = useMemo(() => {
-    const filteredPhases = filterPhasesByAge(
-      person.birthday,
-      personCategory.phases
-    );
-    return createPhaseEntries(categoryDefinition, filteredPhases);
-  }, [person.birthday, personCategory, categoryDefinition]);
+    return createPhaseEntries(categoryDefinition, personCategory.phases);
+  }, [personCategory, categoryDefinition]);
+  const currentPhase = useMemo(() => {
+    return person.birthday != null
+      ? getCurrentPhaseByBirthday(person.birthday)
+      : -1;
+  }, [person.birthday]);
 
   const selectionChange = (phase: string, entry: number, sel: Selection) => {
     // const newCategory: Category = JSON.parse(JSON.stringify(personCategory));
@@ -136,21 +140,29 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
     setAdditionalInformation(entry.additionalInformation ?? null);
   };
 
-  const highlightClass = (phaseId: string, rowIdx: number) => {
+  const highlightClassForEntry = (phaseId: string, rowIdx: number) => {
     return phaseId === highlightRow[0] && highlightRow[1] === rowIdx
       ? styles.rowHighlight
       : '';
   };
+  const highlightClassForCurrentPhase = (phaseId: string) => {
+    return parseInt(phaseId, 10) === currentPhase ? styles.phaseHighlight : '';
+  };
+
   const header = (phaseEntry: PhaseEntry) => {
     const result = calculateResult(phaseEntry.phase);
     const phaseName = phaseEntry.phaseDefinition.name || phaseEntry.id;
     const resultRounded = Math.round(result * 100) / 100;
+    const numUnknown = phaseEntry.phase.entries.filter(
+      (e) => e === Selection.Unknown
+    ).length;
     return (
       <div className={styles.collapseHeader}>
         {`${categoryDefinition.name} ${phaseName}`}
-        <span
-          className={styles.collapseResult}
-        >{`Ergebnis: ${resultRounded}`}</span>
+        <span className={styles.collapseResult}>Ergebnis: {resultRounded}</span>
+        <span className={styles.collapseResult}>
+          <Text type="secondary">Unb.: {numUnknown}</Text>
+        </span>
       </div>
     );
   };
@@ -159,7 +171,11 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
     <>
       <Collapse>
         {phases.map((phase) => (
-          <Panel header={header(phase)} key={phase.id}>
+          <Panel
+            header={header(phase)}
+            key={phase.id}
+            className={highlightClassForCurrentPhase(phase.id)}
+          >
             <div className={styles.row}>
               <div className={styles.colFirst}>Erklärung</div>
               <div className={styles.col}>Tut Es</div>
@@ -172,7 +188,10 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
               <div
                 // eslint-disable-next-line react/no-array-index-key
                 key={rowIdx}
-                className={`${styles.row} ${highlightClass(phase.id, rowIdx)}`}
+                className={`${styles.row} ${highlightClassForEntry(
+                  phase.id,
+                  rowIdx
+                )}`}
                 onMouseEnter={() => handleRowMouseEnter(phase.id, rowIdx)}
                 onMouseLeave={handleRowMouseLeave}
               >

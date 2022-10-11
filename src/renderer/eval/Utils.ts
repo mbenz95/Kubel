@@ -30,10 +30,6 @@ export const createPhaseEntries = (
     .filter((val) => val != null) as PhaseEntry[];
 };
 
-export const sleep = async (ms = 500) => {
-  await new Promise((resolve) => setTimeout(resolve, ms));
-};
-
 export function getPhasesForAgeInMonths(ageInMonths: number): number {
   const ageInMonthsToPhase: { [key: number]: number } = {
     2: 1,
@@ -62,10 +58,15 @@ export function getPhasesForAgeInMonths(ageInMonths: number): number {
 }
 
 export function getPhaseForBirthday(birthday: string): number {
+  const age = ageInMonth(birthday);
+  return getPhasesForAgeInMonths(age);
+}
+
+function ageInMonth(birthday: string): number {
   const birthdayMoment = moment(birthday, BIRTHDAY_DATE_FORMAT);
   const now = moment();
   const diffMonth = now.diff(birthdayMoment, 'months');
-  return getPhasesForAgeInMonths(diffMonth);
+  return diffMonth;
 }
 
 export function filterPhasesByAge(
@@ -80,4 +81,8 @@ export function filterPhasesByAge(
       res[key] = phases[key];
       return res;
     }, {} as Phases);
+}
+
+export function getCurrentPhaseByBirthday(birthday: string): number {
+  return getPhasesForAgeInMonths(ageInMonth(birthday));
 }
