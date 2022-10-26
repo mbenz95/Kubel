@@ -1,4 +1,4 @@
-import { Alert, Button, Card, Collapse, Typography } from 'antd';
+import { Alert, Button, Card, Checkbox, Collapse, Divider, Typography } from 'antd';
 import Title from 'antd/lib/typography/Title';
 import { useEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
@@ -21,6 +21,10 @@ export default function SettingsPage() {
       <Title level={2}>Einstellungen</Title>
       <Card title="Version &amp; Updates">
         <UpdateSection />
+        {/*
+        <Divider />
+        <OverwriteCategories />
+       */}
       </Card>
     </div>
   );
@@ -118,6 +122,16 @@ function Changelog() {
           <ReactMarkdown>{changelog}</ReactMarkdown>
         </Panel>
       </Collapse>
+    </>
+  );
+}
+
+function OverwriteCategories() {
+  return (
+    <>
+      <Checkbox>
+        Phasen Information bei Update überschreiben (Standard: Aktiviert)
+      </Checkbox>
     </>
   );
 }

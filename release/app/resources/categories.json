@@ -1,914 +1,1064 @@
 {
   "koerper": {
-    "name": "Körper",
+    "name": "Körperbewusstsein",
     "phases": {
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Will Tätigkeiten selbstständig ausführen.",
+	    "additionalInformation": "Sich anziehen, Windel ausziehen/schließen, Schuhe zumachen, Waschen usw, lehnt Hilfe ab und möchte selbstständig sein, auch wenn die Kompetenz, die Dinge alleine zu tun, noch nicht vorhanden ist."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Zeigt Interesse, die Toilette oder den Topf zu benutzen.",
+	    "additionalInformation": "Zieht an der Windel, wenn sie nass ist, möchte zur Toilette oder auf den Topf, auch wenn es dann häufig nicht immer die Blase entleert oder Stuhlgang hat."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Trocknet sich die Hände nach den Wasche ab."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Schnaubt leicht in das Taschentuch beim Naseputzen.",
+	    "additionalInformation": "Wenn man ihm ein Taschentuch anbietet, wischt es nicht nur, sondern schnaubt leicht ins Taschentuch hinein."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zieht sich einige Kleidungstücke an und aus.",
+	    "additionalInformation": "Zieht Socken an, ohne den richtigen Sitz der Ferse oder der Zehen zu berücksichtigen, zieht die Hose beim Toilettengang aus oder herunter und zieht sie wieder hoch."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Isst und trinkt weitgehend selbstständig.",
+	    "additionalInformation": "Isst geschickt mit dem Löffel, eventuell auch mit der Gabel, isst mit der Hand belegte Brote oder Brötchen, trinkt sicher aus Glas oder Tasse."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Interessiert sich für den eigenen Kot und den anderer.",
+	    "additionalInformation": "Interessiert sich für den eigenen Kot, möchte diesen vielleicht anfassen, daran riechen, damit schmieren oder ihn behalten, macht deshalb vielleicht lieber in die Windel oder in den Topf als in die Toilette."
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Wäscht sich die Mundpartie und die Hände.",
+	    "additionalInformation": "Gibt Seife auf den Waschlappen oder auf die Hände und wäscht sich das Gesicht mit dem einen oder anderen nach dem Essen oder nach Aufforderung."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Geht von selbst zur Toilette.",
+	    "additionalInformation": "Geht auf die Toilette, sagt eventuell vorher Bescheid, bittet darum, den Knopf der Hose zu öffnen, versorgt sich selbst, mag zum Po abwischen aber noch rufen, gibt deutlich an, wobei es Hilfe benötigt, merkt vielleicht nicht immer rechtzeitig, wenn es muss."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Legt Wert darauf, dass seine Sachen oder Kleidung am richtigen Platz sind.",
+	    "additionalInformation": "Rückt seine Schuhe zurecht, wenn diese an der Garderobe am falschen Platz stehen, möchte die Jacke am richtigen Haken haben, legt eventuell ein Kuscheltier, das es von zu Hause mitgebracht hat, in sein Fach, zeigt Besucher sein eienes Fach und ist stolz drauf."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Entwickelt Abneigung und Vorliebe für bestimmte Kleidungsstücke.",
+	    "additionalInformation": "Besteht vielleicht auf Hosen mit Taschen oder auf Kleidungsstücken mit einer bestimmten Farbe."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zieht sich die Schuhe allein an.",
+	    "additionalInformation": "Zieht sich Hausschuhe an, bei Straßenschuhen braucht es viel Zeit und vielleicht verbale Begleitung sowie eventuell kleine Hilfen bei schwierigen Verschlüssen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "-"
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zeigt Geschicklichkeit bei der Benutzung von Essutensilien.",
+	    "additionalInformation": "Hält Besteck entspannt in der Hand und führt das Besteck aus dem Handgelenk heraus zum Mund, zerteilt Speisem wie Kartoffeln oder Eierkuchen mit der Gabel."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Zeigt gute Koordination beim An - und Ausziehen.",
+	    "additionalInformation": "Zieht sich Hose, Pullover, Jacke an und aus, wenn man ihm Zeit und verbale Begleitung gibt, benötigt noch Unterstützung bei kniffeligen Kleidungsstücken mit schwer zu öffnenden Verschlüssen oder engen Pullovern."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Braucht tagsüber keine windel mehr."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Ist weitgehend selbstständig beim Frühstück und Abendbrot.",
+	    "additionalInformation": "Entscheidet, was es essen möchte, schmiert und belegt sein Brot oder Brötchen, gießt sich Tee ein."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beginnt, Menschen zu malen.",
+	    "additionalInformation": "Malt erste Kopffüßler mit Augen und Strichen für Arme und Beine."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Kennt sein eigenes Geschlecht.",
+	    "additionalInformation": "Ordnet sich als Mädchen oder Junge ein, wenn es gefragt wird, ob es ein Mädchen oder ein Junge ist, antwortet es prompt und eventuell empört."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versucht, mit dem Messer zu schneiden.",
+	    "additionalInformation": "Versucht, mit dem Messer zu schneiden, und bemüht sicht, nicht zu kleckern, schneidet Würstchen oder Kartoffeln, wechselt eventuell nach dem Schneiden die Hand und isst mit der Gabel weiter."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Zieht sich selbstständig an."            
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Geht selbstständig zur Toilette und erledigt alles ohne Hilfe.",
+	    "additionalInformation": "Wischt sich selbst den Po, mag aber bei schwierigen Knöpfen evtl. um Hilfe bitten."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Macht Konversation bei Mahlzeiten, ohne sich beim Essen stören zu lassen.",
+	    "additionalInformation": "Beteiligt sich an Tischgesprächen, isst aber weiter."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beteiligt sich aktiv an der Vorbereitung des Essens.",
+	    "additionalInformation": "Fügt Zutaten hinzu, wäscht und schneidet Gemüse, portioniert, schüttet um oder dekoriert etc."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Weiß, warum es sich die Zähne putzen soll.",
+	    "additionalInformation": "Selbst wenn es keine Lust hat, sich die Zähne zu putzen, kann es auf Nachfrage erklären, warum Zähneputzen wichtig ist, belehrt auch gerne andere."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Weiß über den Gesundheitswert einiger Speißen Bescheid.",
+	    "additionalInformation": "Weiß, dass zu viele Süßigkeiten ungesund und schlecht für die Zähne sind, dass Vollkornbrot gesünder ist als Weißbrot, dass Obst und Gemüse gesund sind, kann einige gesunde und weniger gesunde Nahrungsmittel nennen bzw zwischen gesunden und weniger gesunden Nahrungsmittel unterscheiden."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Führt Körperpflege nach dem Essen oder vor dem Schlafen selbstständig durch.",
+	    "additionalInformation": "Wäscht sich gesicht und Hände, trocknet sich ab und putzt sich die Zähne, mag Erinnerungen brauchen, führt die Körperpflege dann aber zuverlässig durch."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Zeigt Interesse für körperliche Geschlechtsmerkmale.",
+	    "additionalInformation": "Nutzt die Gelegenheit im Badezimmer oder Waschrau, eigene Geschlechtsmerkmale und die anderer zu betrachten, vergleicht und spricht über Geschlechtsmerkmale."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Fordert manchmal, allein auf die Toilette gehen zu können.",
+	    "additionalInformation": "Schickt anderer Kinder hinaus, möchte nicht, dass anderer gucken, möchte in Ruhe auf der Toilette sitzen, schließt die Tür."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Malt einen Menschen mit Kopf, Körper, Armen und Beinen.",
+	    "additionalInformation": "Malt Menschen mit Rumpf als Oval, Viereck oder Dreieck, von dem Armen und Beine abgehen, meist mit im Verhältnis zum Körper großem Kopf."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zeigt Vorsicht oder Zurückhaltung bei unbekannten Früchten, Beeren und Pilzen.",
+	    "additionalInformation": "Weiß, dass es nicht alles kann, dass es auch giftige Früchte, Beeren und Pilze gibt, zeigt Beeren oder Pilze, die es gefunden hat, einem Erwachsenen und fragt, ob man diese essen kann."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zieht sich selbst vollständig an.",
+	    "additionalInformation": "Zieht sich komplett von der Unterwäsche bis zur Straßenkleidung an (nach dem Turnen oder Schlafen), achtet dabei auf Vorder-, Rück-, Innen- und Außenseite der Kleidung, wenn es ein Kleidungsstück verdreht hat, dreht es dieses auf die richtige Seite."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Putzt sich selbstständig die Nase.",
+	    "additionalInformation": "Holt von sich aus ein Taschentuch oder fragt nach einem, wenn die Nase läuft, oder putzt sich die Nase nach Aufforderung; schnaubt mehrmals hintereinander und versucht, die Nase frei zu bekommen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Ist beim Frühstück (oder Abendbrot) vollkommen selbstständig.",
+	    "additionalInformation": "Ist geschickt in der Benutzung von Essutensilien, im Aufstreichn und Schneiden; schüttet sich Cornflakes in die Schüssel, gießt Milch dazu; bereitet sich selbstständig Kako; schneidet Wurst oder Käse; schmiert sein Brot und schneidet es selbst durch."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Hält sich in verschiedenen Situationen selbstständig und unaufgefordert sauber.",
+	    "additionalInformation": "Wäscht sich unaufgefordert und selbstständig klebrige Hände nach dem Basteln oder Malen und wischt sich nach dem Essen oder Naschen auch um den Mund herum, wenn dort Essensspuren sind."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Tobt sich manchmal bis zur Erschöpfung aus.",
+	    "additionalInformation": "Rennt ohne äußeres Ziel; Ziel der motorischen Tätigkeit ist das Wahrnehmen der körperlichen Grenze, von körperlicher Erschöpfung."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Spielt Spiele mit sexuellem Charakter.",
+	    "additionalInformation": "Zieht sich mit einem anderer oder mehreren Kindern in Höhle oder anderen Ort zurück; erforscht durch Betrachten und Berühren die eigenen Geschlechtsteile und die der anderen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Verwendet die Bezeichnung rechts und links als Richtungs - oder Seitenangaben."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Ist sich der Entblößung seines Körpers bewusst.",
+	    "additionalInformation": "Ist zurückhaltend beim Ausziehen in Anwesenheit von Fremden oder in unvertrauten Situationen bzw. fragt Bezugspersonen, ob es Badekleidung braucht oder nicht; besteht evtl. auf Badekleidung."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Isst mit Messer und Gabel.",
+	    "additionalInformation": "Zerteilt oder schneidet sein Essen (auch Fleisch) selbst mit dem Messer, schiebt Essen mit dem Messer auf die Gabel; auch wenn es nicht die ganze Mahlzeit über Messer und Gabel benutzt."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Bezeichnet Körperteile differenziert.",
+	    "additionalInformation": "Kleiner Finger, Daumen, Ellenbogen, Schulter, Schienbein, Knöchel, Knie."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zeichnet Menschen mit verschiedenen Details.",
+	    "additionalInformation": "Schuhe, Kleidung mit Knöpfen, Frisuren, Schmuck, Gürtel, Finger, evtl. Wimpern, Brauen, Tasche; verwendet oft geschlechtstereotype Details."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Wählt seine Kleidung dem Wetter und der Gelegenheit entsprechend.",
+	    "additionalInformation": "Beachtet Wetter, Feier, Anlass oder Funktion und sprcht darüber; erklärt, dass es besser einen Rock trägt oder heute besser eine Matschhose anzieht, und begründet seine Auswahl."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Führt auch knifflige Aufgaben beim An - und Ausziehen aus.",
+	    "additionalInformation": "Knöpft alle Knöpfe ohne Hilfe zu, selbst ganz kleine an Hemd oder Bluse oder schwierig platzierte; schließt den Hosenstall; fädelt Gürtel durch; handhabt Knöpfe an der Latzhose; zeigt hohe Motivation, die Aufgabe alleine zu bewältigen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Ist an der Herkunft von Babys interessiert.",
+	    "additionalInformation": "Fragt, wie das Baby im Bauch wächst; guckt sich interessiert Bücher an, die sich mit dem Thema Schwangerschaft und Geburt befassen; interessiert sich für dieses Thema unabhängig davon, ob es einen aktuellen Anlass in der Familie gibt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Versorgt gern kleine Schrammen bei sich oder anderen mit Pflaster oder Verband.",
+	    "additionalInformation": "Möchte bereitwillig kleine Wunden bei sich selbst oder anderen mit Pflaster versorgen, auch wenn es einem Erwachsenen nicht unbedingt notwendig erscheint; schneidet Pflaster zurecht, klebt es vorsichtig auf; versucht das Pflaster nur am Rand zu berühren; mag gerne Verbände anlegen; oft sind Pflaster und Verband größer als notwendig."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Setzt sich mit geschlechtsbezogenen Stereotypen auseinander.",
+	    "additionalInformation": "Hat genaue Vorstellungen davon, wie Jungen oder Mädchen aussehen, wie sie sich verhalten sollten und welche Kompetenzen und Aufgaben Jungen und Mädchen haben sollten, -Jungs sind stärker als Mädchen-; -Mädchen haben lange Haare, Jungs kurze-; hält gerne am stereotypen Einordnen fest."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hat einen Wackelzahn oder auch schon erste Zahnlücken",
+	    "additionalInformation": "Beschäftigt sich intensiv mit seinem Wackelzahn, zeigt diesen gern anderen oder zeigt den ausgefallenen Zahn bzw. die entstandene Lücke stolz."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Weiß, dass sich Mädchen und Jungen durch ihr biologoisches Geschlecht unterscheiden.",
+	    "additionalInformation": "Selbst wenn als erstes Unterscheidungsmerkmal andere Kriterien wie Frisur oder Kleidung herangezogen werden, weiß es, dass sich die Geschlechter letztlich durch innere und äußere biologische Geschlechtsmerkmale unterscheiden."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Weiß, wie Keime und Bakterien übertragen werden und dass sie krank machen können.",
+	    "additionalInformation": "Weiß, dass Keime und Bakterien krank machen können, dass sie an den Händen haften und dass deshalb Händewaschen wichtig ist; dass Händewaschen wichtig ist, wenn es Tiere berührt hat oder diese seine Hand abgeleckt haben; weiß, dass man sich in die Armbeuge husten soll."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schließt sich häufig geschlechtsgleichen Gruppen an.",
+	    "additionalInformation": "Spielt in den Pausen überwiegend mit Kindern des gleichen Geschlechts; vor allem in größeren Gruppen ist die Kleingruppenbildung häufig vom Geschlecht abhängig."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Versteht, dass rechts und links körperorientierte Bezeichnungen sind.",
+	    "additionalInformation": "Wenn es einen Weg oder die Position eines anderen nachvollziehen will, dreht es sich evtl. in die entsprechende Richtung, um nachzuvollziehen, wo die linke oder rechte Seite ist; weiß dass recht und links von der Körperposition abhängige Bezeichnungen sind."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Besteht darauf sich alleine zu duschen.",
+	    "additionalInformation": "Möchte sich alleine duschen oder baden; wäscht sich auch die Haare alleine, auch wenn es den Schaum vielleicht noch nicht vollkommen auswäscht; lehnt Hilfe oft vehement ab."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hat eine Vorstellung von den verschiedenen Stufen der Verdauung.",
+	    "additionalInformation": "Weiß und spricht darüber, dass die Nahrung durch die Speiseröhre in den Magen rutscht, dort bearbeitet wird und dann den Darm durchläuft, dass auf diesem Weg Nährstoffe in den Körper gelangen und der Rest als Kot ausgeschieden wird."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zeichnet Menschen mit durchgängiger Kontur und in Aktivität.",
+	    "additionalInformation": "Stellt Menschen nun auch in Bewegung oder bei einer Tätigkeit dar, wobei Arme und Beine in Schrägstellung stehen und in die gleiche Richtung zeigen; stark verlängerte, zu einem Werkzeug hingerichtete Arme zeigen den Menschen bei einer Tätigkeit; der Körper des Menschen wird mit einer druchgängigen Kontur gezeichnet und nicht mehr aus einzelnen Teilen zusammengesetzt; der Kopf mag manchmal noch angesetzt sein."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Hat grundlegende Kenntnisse über den Umgang mit Lebensmitteln.",
+	    "additionalInformation": "Weiß etwas über die Haltbarkeit von Lebensmitteln, welche kühl und welche trocken gelagert werden sollten; weiß, dass man kleine faule Stellen aus Obst herausschneiden kann und soll, dass Kartoffeln keimen, dass man Obst vor Fliegen schützen sollte, dass Brotdose und Trinkflasche regelmäßig geleert und gereinigt werden sollten."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Inszeniert erstes Verliebtsein.",
+	    "additionalInformation": "Schreibt Liebesbriefe; geht evtl. Hand in Hand mit dem oder der -Verliebten-; spricht über das Verliebtsein; teilt gerne mit, wer in wen verliebt ist."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Bezeichnet alle sichtbaren Körperteile."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Identifiziert rechts und links beim Gegenüber sicher."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beteiligt sich an geschlechtsgemischten Rangeleien.",
+	    "additionalInformation": "Rangelt mit Jungen und Mädchen; beteiligt sich an körperbetonten Rangelspielen, bei denen Mädchen gegen Jungen kämpfen und umgekehrt; hat häufiger spielerische Rangeleien mit einem Jungen bzw. Mädchen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Weiß, dass körperliche Phänomene verschiedene Ursachen haben können.",
+	    "additionalInformation": "Weiß bzw. denkt manchmal laut darüber nach, dass ein roter Kopf Wut oder Scham bedeuten kann, aber vielleicht auch, dass jemand Fieber hat oder sich angestrengt hat; kennt körperliche Anzeichen wie feuchte Hände bei Aufregung und Stress."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Wäscht sich selbstständig die Haare.",
+	    "additionalInformation": "Schäumt die Haare ein, wäscht und spült sie aus, kämmt und föhnt sich die Haare."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Interessiert sich fürs Kochen und Backen.",
+	    "additionalInformation": "Möchte selbstständig den Nachtisch zubereiten; hilft bei der Zubereitung von Speisen, möchte dabei kleune Aufgaben übernehmen wie Eierkuchen wenden oder Nudeln kochen u.Ä.; möchte beim Backen aktiv beteiligt sein oder selbst einen Rührkuchen oder nach einer Backmischung backen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Kennt wesentliche Funktionen von Organen.",
+	    "additionalInformation": "Lunge zum Atmen; Herz pumpt das Blut und transportiert Sauerstoff; Magen und Darm sind zuständig für die Verdauung etc."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Verfügt über ein gewisses Gesundheitsbewusstsein.",
+	    "additionalInformation": "Weiß, dass es nicht zu lange im Wasser bleiben kann, sondern heraus soll, wenn die Lippen blau sind oder es zittert; dass man sich vor der Sonne schützen soll, sich mit Sonnenschutz eincremt; achtet darauf, nicht direkt nach dem Essen ins Wasser zu gehen; achtet auf dem Wetter angemessene Kleidung."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Stellt die Beweglichkeit des Körpers zeichnerisch dar und malt Gesichter im Profil.",
+	    "additionalInformation": "Zeichnet Arme und Beine diagonal mit gekrümmten Knien und gewinkelten Armen; malt Personen, die auf dem Stuhl sitzen, sich beugen, springen, rennen etc.; malt Gesichter von der Seite, manchmal auch in Simultanperspektive."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Weiß über gesunde Ernährung Bescheid.",
+	    "additionalInformation": "Kennt nicht nur gesunde und weniger gesunde Mahrungsmittel, sondern weiß um die Ausgewogenheit der Ernährung; weiß, welche Nahrungsmittel mehr Vitamine, Fette, Kohlenhydrate, Ballaststoffe, etc. enthalten; dass regelmäßig Mahlzeiten und ausreichend Schlaf ebenfalls wichtig sind; weiß, wie Vitamine in der Nahrung erhalten bleiben."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kocht kleine Mahlzeiten selbst und backt Kuchen.",
+	    "additionalInformation": "Rühr- und Spiegeleier, Eierkuchen, Nudeln mit Tomatensauce, Fertiggerichte, einfache Gerichte, backt selbstständig Kuchen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt und achtet auf gängige Tischmanieren.",
+	    "additionalInformation": "Hände waschen vor dem Essen; nicht schmatzen und mit vollem Mund reden."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Ist sich der Wirkung seiner körperlichen Erscheinung bewusst.",
+	    "additionalInformation": "Aussehen, Styling und Attraktivität werden wichtiger; möchte gut oder cool aussehen; hat genaue Vorstellungen über Aussehen und Kleidung, die sich oft an der Peergruppe orientieren."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Weiß, dass Geschlechterrollen flexibel sind.",
+	    "additionalInformation": "Weiß,dass Kompetenzen nicht vom Geschlecht abhängen, sondern von anderen Faktoren wie Erfahrung, Motivation und Begabung."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Übernimmt Verantwortung und erledigt regelmäßig kleine Aufgaben im Haushalt.",
+	    "additionalInformation": "Erledigt den Abwasch oder räumt die Spülmaschine ein und aus, bringt Altglas zum Container; staubsaugt sein Zimmer, legt seine Kleidung in die Wäsche; deckt und räumt den Esstisch ab etc."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Hat eine Vorstellung von körperlichen Veränderungen in der Pubertät und deren Bedeutung.",
+	    "additionalInformation": "Weiß, dass die Pubertät bei Jungen und Mädchen körperliche Verämderungen mit sich bringt und damit ein langsamer Wandel vom Kind zum Erwachsenen einsetzt; kennt einige Merkmale wie Entwicklung der Körperbehaarung, Schamhaare, Achselhaare, Bildung von Brüsten, Veränderung des Hodensacks, Einsetzen der Menstruation etc."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
     }
   },
   "umgebungsbws": {
-    "name": "Umgebungsbws.",
+    "name": "Umgebungsbewusstsein",
     "phases": {
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beschäftigt sich intensiv mit seiner erweiterten Umgebung.",
+	    "additionalInformation": "Wortschatz geht nun über Alltagssituationen und -themen hinaus und bezieht sich auf seine erweiterte Umgebung wie Verkehr (Ampel, Hupe, Bushaltestelle, U-Bahn, Zug, Gleis, Schaffner, Kelle), Einkaufen (Kasse, Wagen, Euro, Einkaufschip), Postamt, Poliezi, Bahnhof, GEschäfte, Zoo, Bank, Park, Schwimmbad."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Erweitert seinen Aktionsradius.",
+	    "additionalInformation": "Entfernt sich beim Erkunden nun häufiger von der Bezugsperson; erkundet interessiert Nebenräume; öffnet sich auch selbst die Türen; versucht hinauszugehen; im Freien wandert es gerne umher, entdeckt dabei verschiedene Dinge auf dem Boden oder in Sichthöhe (Papierkörbe, Briefkästen) und untersucht diese interessiert; zeigt auch Neugier und Offenheit Personen gegenüber, die es beim Herumwandern entdeckt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Interpretiert in Bilderbüchern dargestellte Situationen seines Erfahrungsbereiches.",
+	    "additionalInformation": "Entwickelt eine Vorstellung, was passiert ist und noch folgen wir; drückt diese sprachlich aus."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beobachtet und imitiert Spielhandlungen oder Tätigkeiten anderer Kinder.",
+	    "additionalInformation": "Imitiert Spielhandlungen oder Tätigkeiten anderer Kinder, die es beobachtet hat; das Nachahmen erfolgt entweder direkt oder auch verzögert, d.h., das Kind zeigt die Spielhandlung einen oder auch erst mehrere Tage später."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Kategorisiert seine soziale Umwelt nach Alter und Geschlecht.",
+	    "additionalInformation": "Verwendet für Personen treffend die Bezeichnung Baby, Junge und Mädchen, Mann und Frau, Opa und Oma bzw. alter Mann und alte Frau."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Entwickelt ein Konzept von mein und dein.",
+	    "additionalInformation": "Erkundet die Reaktionen anderer; nimmt Dinge von anderen gezielt, um die Reaktion zu testen; beginnt zu akzeptieren, dass es nicht jede Handtasche untersuchen darf; Eigentumsfächer der Kinder haben eine hohe Bedeutung und werden akzeptiert; hat die Vorstellung, dass alle Gegenstände in seinem Zimmer ihm gehören, das Teilen fällt ihm deshalb manchmal schwer."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zeigt Wissen über verschiedene Berufe.",
+	    "additionalInformation": "Postbote, Polizist, Busfahrer, Lehrer, Verkäufer; kennt auch Werkzeuge oder Ausrüstung wie Briefkasten, Kelle, Tafel, Kasse, Fahrkarte etc."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Verhält sich situationsentsprechend.",
+	    "additionalInformation": "Sitzt still während des Transports im Bus oder der Bahn; bleibt bei Spaziergängen bei der Gruppe; orientiert sich an der Gruppe oder an bestimmten Personen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Beantwortet bereitwillig Fragen, die Informationen oder sein Umweltwissen erfragen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Zeigt gewisse Zeitorientierung.",
+	    "additionalInformation": "Tag, Nacht, Vor- oder Nachmittag; verknüpft bestimmte Tagesabschnitte mit bestimmten Tätigkeiten/Ereignissen; jetzt, gleich, später, morgen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Unterstellt Lebenwesen gewisse Ziele, Absichten oder Pläne.",
+	    "additionalInformation": "Bezieht sich weniger auf das beobachtbare Verhalten als auf die dahintersteckende Absicht; wenn z.B. ein Hund ankommt und auffordernd guckt, sagt es -Der Hund hat Hunger.-; oder es sieht einen Jungen, der sich einen Helm aufsetzt, und sagt -Der Junge will Fahrrad fahren.-"
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Verfügt über erste Naturerfahrungen und Kenntnisse aus der Tier- und Pflanzenwelt.",
+	    "additionalInformation": "kennt Begriffe wie Stöcke, Blüten, Zapfen, Schneckenhaus, Steine, Felsen, Frosch, Vogel, Schmetterling, Blume, Pilz."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kennt seine eigene Altersstufe und die anderer Personen.",
+	    "additionalInformation": "Nennt sein eigenes Alter, wenn es gefragt wird; drückt das Bedürfnis aus, älter zu sein, will das tun, was die älteren machen."
+	    
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Erkennt Gebiete, die es nicht täglich sieht.",
+	    "additionalInformation": "Erkennt Gebiete; erinnert sich eventuell an Gebäude, Erlebnisse und weist darauf hin."
+	    
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Setzt Erfahrungen und Erlebnisse in Beziehung zueinander.",
+	    "additionalInformation": "Erinnert sich an Plätze, Menschen und Ereignisse."
+	    
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Berichtet Reihenfolge täglicher Abläufe oder häufig erlebter Situationen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Kennt Bedürfnisse, Lebensweise und Besonderheiten verschiedener Tiere.",
+	    "additionalInformation": "Unterscheidet nach Pflanzen- oder Fleischfressern (z.B. bei Dinos); hat eine Idee davon, dass manche Tiere im Wald, in der Steppe, im Wasser, im Eis usw. leben; unterscheidet gefährliche und ungefährliche Tiere."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Baut mit Bausteinen nun in die Breite und in die Höhe.",
+	    "additionalInformation": "Baut mit Bausteinen eine Brücke über die Eisenbahnschienen oder ein Eingangstor in die als Zaun aneinandergereihten Bausteine (Gatter-Bahnhof, Tierpark); es entstehen erste einfache Gebäude wie Garagen oder Häuser, die aus Grundreihe(n) mit einigen in die Höhe gebauten Steinen bestehen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Verbindet Alter mit verschiedenen Tätigkeiten und Erfahrungen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Erkennt Orte, Einrichtungen oder Geschäfte an Zeichen oder Symbolen.",
+	    "additionalInformation": "Erkennt den Bahnhof oder die Bushaltestelle am Schild, die Postfiliale am Symbol, auch in Büchern; erkennt Schnellrestaurants, Supermärkte o. Ä. am Logo."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Hat eine gute räumliche Orientierung in der nahen Umgebung.",
+	    "additionalInformation": "Zeigt korrekt in die Richtung, in der sich zum Beispiel die Kirche, der Spielplatz o. Ä. befindet; wenn es nach einer Wegbeschreibung gefragt wird, nennt es Markantes am Zielort und bietet evtl. an, den anderen dorthin zu führen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Unterscheidet und benennt kurz und lang sowie dick und dünn."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beschreibt die Beschaffenheit von Dingen und Materialien.",
+	    "additionalInformation": "Beschreibt Oberflächen, wenn es seine Hand über Material gleiten lässt, z.B. glattes Glas, raues Sandpapier, weicher Samt, kuscheliger Pullover; verdeutlicht Gegensätze wie kratzig - weich, rau - glatt usw."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zeichnet vertraute Dinge seiner Umgebung.",
+	    "additionalInformation": "Häuser, Autos, Tiere, Bäume, auch wenn diese vielleicht nicht sofort zu erkennen sind; benennt, was es gemalt hat."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Verbindet Sommer und Winter mit typischen Merkmalen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt Namen und Funktionen der Angestellten des Kindergartens."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Kennt verschiedene Gefahrensituationen im Alltag.",
+	    "additionalInformation": "Weiß, dass Feuer gefährlich ist und dass man nur im Beisein Erwachsener Feuer machen darf; hält sich zurück bei fremden Hunden, fragt, ob es streicheln darf; ist achtsam beim Klettern auf ein hohes Gerüst oder einen Baum; hält Abstand zur Fahrbahn bei stark befahrenen Straßen; tritt zurück, wenn U-Bahn, Zug oder Bus einfahren."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Benennt das Material, aus dem Dinge gemacht sind."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Begreift, was ein Lebewesen ausmacht.",
+	    "additionalInformation": "Weiß, dass lebendige Wesen wachsen, atmen, sich ernähren, ein Zuhause haben, sich bewegen; weiß, dass Wunden wieder heilen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Stellt in seinen Zeichnungen eher dar, was es weiß, als was es sieht.",
+	    "additionalInformation": "Zeichnet Auto von der Seite mit vier Rädern hintereinander, weil es weiß, dass ein Auto vier Räder hat; Baum wird häufig als gerade Stamm dargestellt, von dem Äste im rechten Winkel abgehen; wichtige Personen werden in Relation viel größer dargestellt."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kennt verschiedene Verkehrszeichen.",
+	    "additionalInformation": "Kennt die Funktionen der Ampel, Zebrastreifen mit Schild, Bushaltestelle, Radweg, Spielstraße, Stoppschild, Parkplatz; kennt einige dieser Zeichen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Verbindet gewisse Aufgaben mit Berufen.",
+	    "additionalInformation": "Der Briefträger bringt die Post, der Feuerwehrmann löscht das Feuer, der Bäcker backt den Kuchen, der Arzt macht die Menschen gesund."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Gibt an oder beschreibt, wo es wohnt.",
+	    "additionalInformation": "Wenn man es fragt, wo es wohnt, gibt es Teile seiner Adresse an und beschreibt mit Merkmalen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Unterscheidet Hell- und Dunkelabstufungen bei Farben."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beschreibt Dinge differenziert anhand mehrerer Merkmale."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zeigt erste zeitliche Orientierung im Wochenabschnitt.",
+	    "additionalInformation": "Hat eine Vorstellung von der Einteilung der Woche; benennt Wochentage oder fragt wann Wochenende ist."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Setzt sich mit Zeitbegriffen auseinander.",
+	    "additionalInformation": "Gestern, morgen, übermorgen, vorgestern, nächste Woche; experimentiert mit Begriffen für Vergangenheit und Zukunft, setzt diese aber noch unpräzise ein."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Verfügt über räumliche Orientierung über den alltäglichen Raum hinaus.",
+	    "additionalInformation": "Nutzt Orientierungspunkte zur BEschreibung; schätzt Entfernungen in -nah- und -weit weg- ein; läuft allein vor, kennt bestimmte Wege sicher."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Verfügt über spezifisches Wissen in verschiedenen Institutionen oder Situationen.",
+	    "additionalInformation": "Zoobesuch, Theater, Bahnfahrt, Kino, Post, Schwimmbad, Einkaufen, Restaurantbesuch, Bibliothek, Krankenhaus; zeigt Detailwissen und kennt charakteristische Abläufe wie z.B. Garderobe, Kartenkontrolle, Platzsuche im Theater, leise sein, Pausenklingeln etc. im Theater oder Anstellen, Brief wiege, um richtige Marke zu erhalten, bei der Post; im Schwimmbad umziehen, Sachen in Spind einschließen, erst abduschen, dann baden etc."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Zeichnet Dinge mit ihrem Inhalt (Röntgenbilder).",
+	    "additionalInformation": "Füllt ein Haus mit Mobiliar, ein Auto mit Fahrer, ein FLugzeug oder einen Zug mit Passagieren; zeichnet das Lenkrad oder den Motor im Auto, eine Frau mit Baby im Bauch."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Verwendet die richtigen Maßeinheiten für Gewicht, Länge, Volumen.",
+	    "additionalInformation": "Sagt, dass es zwei Meter groß ist; die Maßeinheit wird richtig verwendet, aber die Menge häufig nicht."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Schätzt Häufigkeit wiederkehrender Situationen ein und vergleicht diese.",
+	    "additionalInformation": "Oft, öfter, selter oder meistens."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Überquert Straßen sicher und selbstständig.",
+	    "additionalInformation": "Kennt und beachtet die Funktion der Ampel; rennt nicht über die Straße und sieht erst nach links und rechts, bevor es die Straße überquert; geht zum Zebrastreifen; weiß, welche Straßen stärker befahren sind."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt die Funktionen des Kalenders.",
+	    "additionalInformation": "Blättert im Kalender; benennt einige Monate, auch wenn es nicht die abgebildeten sind; zählt Tage ab; möchte gezeigt bekommen, wann es Geburtstag hat."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Fragt nach der Herkunft, dem Ursprung, der Entstehung von Dingen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beschreibt, benennt und hinterfragt komplexe logistische Prozesse.",
+	    "additionalInformation": "Bescheibt, was mit einem Brief bis zur Zustellung passiert; hat eine Idee davon, wie Transport funktioniert; weiß, dass Kleidungsstücke aus Stoff genäht und später in Läden verkauft werden; Müllabfuhr, Abwasser etc."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Sein Umweltwissen spiegelt sich in seinen Zeichnungen wider.",
+	    "additionalInformation": "Zeichnet viele verschiedene Gebäude wie Wohnhaus, Schloss, Kirche; bildet Situationen (Absturz, Verletzungen, Vorlesen usw.) ab; bildet markante Merkmale von Tieren ab (Giraffe mit langem Hals, Elefant mit Rüssel); zeichnet Menschen bei Tätigkeiten oder der Arbeit mit dazugehörigem Hilfsmittel."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Kennt Hilfsmittel, mit denen es Gewicht, Länge und Volumen messen kann.",
+	    "additionalInformation": "Weiß, was es braucht, um Länge, Gewicht oder Flüssigkeit zu messen, wie z.B. Zollstock, Waage, Messbecher, auch wenn es mit dem genauen Messen noch Schwierigkeiten haben mag."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beschäftigt sich mit dem Tod und begreift diesen als unumkehrbar.",
+	    "additionalInformation": "Begreift, dass kranke und alte Menschen sterben können und nicht wiederkommen; spürt, wenn Erwachsene in Erklärungsnot kommen; äußert Angst, dass geliebte Personen sterben könnten; fragt, was unter der Erde nach dem Begräbnis passiert."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt seine Adresse und Telefonnummer auswendig."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Setzt sich mit Uhr und Uhrzeit auseinander."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Führt kleine Einkaufsaufträge aus und hat eine Idee davon, was beim Einkaufen wichtig ist.",
+	    "additionalInformation": "Produkte vergleichen, auf Wechselgeld achten, Eier prüfen, Chip für den Wagen, Zerbrechliches nicht nach unten in die Tüte etc.; zeigt sein Wissen evtl. auch beim Kaufladenspielen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Seine Zeichnungen zeigen Dinge, Gegenstände und Personen in der Seitenansicht.",
+	    "additionalInformation": "Zeichnet ein Seitenteil an die Häuserfront an; beginnt, Menschen von der Seite zu zeichnen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Möchte seinen Aktionsradius erweitern.",
+	    "additionalInformation": "Möchte alleine einkaufen; äußert den Wunsch, zu dem weiter entfernten Spielplatz zu gehen oder alleine nach Hause zu kommen; tauscht sich mit anderen Kindern oder pädagogischen Fachkräften darüber aus, was es alles schon alleine gemacht hat; sammelt Argumente für mehr Freiheiten."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Bezweifelt die reale Existenz von Figuren wie Weihnachtsmann, Osterhase und Zahnfee.",
+	    "additionalInformation": "Glaubt nicht mehr an den Weihnachsmann, den Osterhasen oder die Zahnfee; freut sich dennoch auf die Feste; trifft aktiv Vorbereitungen, schreibt evtl. Wunschzettel, obwohl es weiß, dass Erwachsene die Geschenke bringen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Akzeptiert Abstimmungen als Mittel der Entscheidungsfindung.",
+	    "additionalInformation": "Kennt und schätzt das Abstimmen als Mittel der Entscheidungsfindung in Gruppen und akzeptiert das Ergebnis; auch wenn es nicht seinem Wunsch entspricht oder ihm schwerfällt, akzeptiert es die Wahl der Mehrheit."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Schätzt Risiken und mögliche Gefahren seines Tuns im Alltag ein.",
+	    "additionalInformation": "Baut eine Rampe fürs Fahrrad und prüft, ob diese stabil genug ist; hört Donnergrollen und geht dann lieber nichts ins Wasser bzw. weiß, wie man sich bei Gewitter verhält; kennt verschiedene Gefahrenquellen wie morsche Äste oder Bretter beim Klettern; weiß, dass das Risiko auch vom eigenen Können abhängig ist, d.h., was für einen ungeübten Kletterer ein Risiko ist, nicht aber für einen Geübten."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Kennt die Aufteilung eines Kalenderjahres.",
+	    "additionalInformation": "Nennt die zwölf Monate in richtiger Reihenfolge; kennt Vorgänger und Nachfolger von Monaten; weiß, dass das Jahr am 1.Januar beginnt und mit Silvester endet; kann den Jahreszeiten Monate zuordnen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Übernimmt für einen begrenzten Zeitraum Verantwortung für Pflanzen und Tiere.",
+	    "additionalInformation": "Gießt die Planze regelmäßig; prüft, ob die Pflanzen Wasser brauchen oder nicht; überlegt, was die Ursache für den Zustand einer Pflanze sein kann; füttert Schnecken, Fische, Mäuse oder andere Kleintiere; führt einen kleinen Hund Gassi."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Kennt den Unterschied zwischen Kaufen, Tauschen, Leihen und Schenken.",
+	    "additionalInformation": "Weiß, dass ausgeliehene Sachen zurückgegeben werden müssen; dass man Bücher aus der Bibliothek leihen kann, sich aber auch Freunde etwas leihen können; weiß, dass man Verschenktes nicht zurückfordern kann; diskutiert mit anderem Kind über Tauschmöglichkeiten."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Schätzt die Dauer von Aufgaben und Tätigkeiten ab und plant realistisch."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt allgemine Maßnahmen zur Gefahrenprävention.",
+	    "additionalInformation": "Helm aufsetzen, Schutzkleidung tragen, Baustelle absperren, Steckdosenschutz, Gerät mit defekter Zuleitung nicht bedienen; achtet darauf, dass jüngere Kinder nicht ins Schwimmbecken gehen, nicht in Steckdosen greifen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Informiert sich gern durch Kataloge und Prospekte über aktuelle Spielsachen.",
+	    "additionalInformation": "Betrachet interessiert und konzentriert Spielzeugkataloge, Modellbauprospekte u. Ä.; träumt davon, was es sih kaufen möchte; wünscht sich etwas zum Geburtstag oder zu Weihnachten; spart auf etwas; berichtet, wer diese neueste Version des Spiels bereits besitzt etc."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Liest sicher die Zeit an einer analogen Uhr ab.",
+	    "additionalInformation": "Ermittelt an der Stellung der Zeiger die exakte Uhrzeit; nennt volle, halbe , Viertel- und Dreiviertelstunde, kennt die Minuteneinteilung und die Umrechnung von 12- auf 24-Stunden-Einteilung; misst und berechnet kleinere und größere Zeitspannen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Entwickelt realistische Preisvorstellungen von Dingen seines Alltags.",
+	    "additionalInformation": "Kennt Preise von Dingen, die es regelmäßig kauft; kann Preise für Spielwaren bis 50 Euro grob abschätzen; weiß, was einbestimmtes Fahrzeug oder eine Puppe ungefähr kostet; weiß, dass es Preisunterschiede in verschiedenen Läden gibt."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Stellt beim Malen verschiedene Materialien zeichnerisch dar.",
+	    "additionalInformation": "Stellt verschiedene Materialien dar, indem es die Oberflächenstruktur nachmalt; zeichnet beim Dach eine Ziegelstruktur durch ein regelmäßiges Muster; bei einer Block- oder Holzhütte stellt es die Bretter oder Balken durch regelmäßige Streifen dar; stellt einen Korbstuhl oder eine Strickjacke durch kleine Kringel dar."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kennt und beachtet die wichtigsten Regeln im Straßenverkehr.",
+	    "additionalInformation": "Kennt die Vorfahrtsregeln und zumindest die Verkehrsschilder, die Vorfahrt, Halten und Fahrverbote regeln; verhält sich verkehrssicher, auch beim Radfahren; beachtet die Schilder und Regeln."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Bewältigt selbstständig Wege innerhalb eines bestimmten Radius.",
+	    "additionalInformation": "Besucht Freunde; geht zum Sport, alleine zur Schule und zurück; macht kleinere Einkäufe; benutzt Bus, Bahn, Fahrrad oder geht zu Fuß in Abhängigkeit von den Gegebenheiten der Umwelt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Schätzt die eigenen schulischen Leistungen realistisch und differenziert ein."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Passt seine Erzählungen und Berichte an Gesprächspartner und die Situation an.",
+	    "additionalInformation": "Passt Wortwahl, Einführung und Inhalt dem Alter, Status und Geschlecht des Gegenübers an; erzählt beispielsweise der Lehrerin u.U. ein Ereignis anders als dem besten Freund."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zeigt Interesse an Politik und politischen Ereignissen.",
+	    "additionalInformation": "Hört z.B. aus Nachrichten größere politische Ereignisse heraus; hat Kenntnise von Kriegen und Terroranschlägen; nennt als mächtigste Person in Deutschland den/die Bundeskanzler/in; kann einige Ämter wie Bürgermeister oder Minister nennen; nimmt Wahlplakate wahr; kennt die Namen einiger Parteien; nennt den Reichstag als zentrales politisches Gebäude."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Weiß, dass es verschiedene Religionen und Kulturen gibt.",
+	    "additionalInformation": "Nennt verschiedene Religionen und evtl. einige Merkmale dieser; weiß, dass es kulturelle Unterschiede zwischen Gruppen gibt; hat eine Vorstellung, dass Religion und Kultur Menschen prägen und Einstellung und Verhalten beeinflussen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
     }
   },
   "soziemot": {
-    "name": "Sozi.-Emot.",
+    "name": "Sozial-Emotional",
     "phases": {
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versucht, seine Ideen und Vorstellungen durchzusetzen, wenn es mit anderen Kindern spielt."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Verwendet -ich-, wenn es sich selbst meint."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Zeigt Freude oder Stolz, wenn ihm etwas selbstständig gelungen ist."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beginnt, Gefühle selbst zu regulieren."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Setzt sich im Spiel mit Emotionen auseinander."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zeigt, dass es Absichten, Gefühle und Vorlieben anderer versteht."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Schiebt Bedürfnisse kurzzeitig auf, verändert sie oder akzeptiert Alternativen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Findet sich mit mehreren Kindern zu gemeinsamen Aktivitäten zusammen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Zeigt Sympathie sowie Vorliebe und Abneigung gegenüber Personen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Bemüht sich, den Ausdruck von Ärger und Wut zu regulieren."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zeigt Betroffenheit, wenn sich jemand wehgetan hat oder traurig ist."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Spricht über einfache Emotionen wie Freude, Trauer, Ärger und Angst."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zeigt Verlegenheit und Scham (Beschämung).",
+	    "additionalInformation": "Lächelt verschämt oder schaut zu Boden, wenn es sich bloßgestellt fühlt oder ihm etwas peinlich ist; fühlt sich ertappt oder schämt sich, wenn es ein anderes Kind geschlagen hat und sich nicht kontrollieren konnte; ist befangen in einer ungewohnten Situation oder mit fremden Personen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Sucht aktiv nach Gemeinsamkeiten, um Nähe oder Zuneigung auszudrücken.",
+	    "additionalInformation": "Findet Gemeinsamkeiten auch dann, wenn viele Unterschiede bestehen oder diese eher ins Auge fallen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Spielt mit einer Gruppe von Kindern über längere Zeit.",
+	    "additionalInformation": "Spielt mit zwei oder mehr Kindern zusammen ohne Unterbrechung über einen längeren Zeitraum (ca.20 Minuten)."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Genießt es, anderen eine Freude zu machen.",
+	    "additionalInformation": "Indem es Aufträge ausführt, Grenzen akzeptiert, Erwachsenen oder anderen Kindern hilft, Geschenke macht oder Süßigkeiten verteilen kann; freut sich, wenn es um Hilfe gebeten wird."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beschäftigt sich mit Ursachen für Emotionen.",
+	    "additionalInformation": "Erklärt, dass der Bär traurig ist, weil er seine Mutter sucht; hat eine Idee, dass Gefühle Ursachen haben, und versucht diese zu ergründen, auch wenn es nicht immer richtig liegt."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Drückt Ängste sprachlich aus.",
+	    "additionalInformation": "Spricht über Ängste; erklärt, wovor es Angst hat (Dunkelheit, vor dem Arzt, Tieren)."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beginnt zu verstehen, dass Motive und Gefühle individuell variieren können.",
+	    "additionalInformation": "Fragt, warum eine andere Person etwas tut; möchte verstehen; ist irritiert , weil es nicht nachvollziehen kann, warum jemand so reagiert; beschäftigt sich mit individuellen Unterschieden in Reaktionen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kontrolliert negative Gefühle und geht mit Frustration um.",
+	    "additionalInformation": "Wendet sich ab, schaut ärgerlich, schnaubt, stampft auf; ballt die Hände zu Fäusten, wenn es enttäuscht oder frustriert ist, weil es etwas nicht machen darf; fragt evtl. nach Alternative oder anderem Zeitpunkt für die gewünschte Aktivität und akzeptiert, wenn auch widerwillig, vertröstet zu werden."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Achtet darauf, dass andere die Regeln einhalten.",
+	    "additionalInformation": "Informiert die pädagogische Fachkraft oder andere Erwachsene; ist entsetzt oder entrüstet über das regelwidrige Verhalten eines Kindes (obwohl es selbst evtl. das Gleiche getan hat); besteht auf Einhaltung der Regeln."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Hängt sehr an Dingen, die es im Kindergarten produziert hat.",
+	    "additionalInformation": "Basteleien, Zeichnungen oder Konstruktionen haben große Bedeutung für das Kind; es zeigt sie anderen stolz, möchte, dass sie aufgehängt werden, oder möchte sie mit nach Hause nehmen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Formuliert erste Vorstellungen von Freundschaft.",
+	    "additionalInformation": "Beginnt, sich mit dem Konzept -Freundschaft- auseinanderzusetzen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Ist gerne bereit, zu helfen oder anderen zu zeigen.",
+	    "additionalInformation": "Wenn jemand etwas sucht, schlägt es vor, dass es ihm den Platz zeigt; wenn ein anderes Kind beim Basteln Hilfe braucht oder langsam ist, bietet es Hilfe an; häufig übernimmt es dann eher die Ausführung als zu unterstützen; erfreut sich an den eigenen Kompetenzen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versucht, Autorität einzusetzen, um einer ihm unangenehmen Situation zu entgehen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Spielt eine halbe Stunde lang für sich allein.",
+	    "additionalInformation": "Auf dem Spielplatz, in einer Ecke des Gruppenraumes, einem anderem Raum oder einer Nische im Flur o. Ä."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Bewertet dargestellte Handlungen moralisch.",
+	    "additionalInformation": "Gibt bei der Betrachtung von bildlichen dargestellten Situationen oder Geschichten Werturteile ab."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beginnt, einen festen bzw. besten Freund oder Freundin zu haben.",
+	    "additionalInformation": "Spielt vorrangig mit einem bestimmten Kind, bezeichnet es als -mein Freund-; will neben diesem sitzen, sich mit ihm verabreden; versucht auch mal, andere auszuschließen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Ist stolz auf sein Können.",
+	    "additionalInformation": "Zeigt gerne und stolz Selbstgebautes, Gebasteltes; präsentiert, wie schnell es laufen kann."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Ist betroffen, wenn es bei einem anderen Traurigkeit oder Schmerz verursacht.",
+	    "additionalInformation": "Wenn es ohne Absicht einem anderen Schmerz zugefügt oder etwas kaputt gemacht hat, ist es betroffen, schaut schuldbewusst, hilflos, bietet evtl. etwas an, sagt: -Das war nicht absichtlich-; oder auch, wenn es aus Ärger heraus heftiger reagiert oder dem anderen mehr Schaden als beabsichtigt zugefügt hat."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versucht, Konflikte verbal zu lösen.",
+	    "additionalInformation": "Macht Vorschläge zur Verteilung von Material; nimmt sich auch mal zurück."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Zeigt gewisse Frustrationstoleranz.",
+	    "additionalInformation": "Lässt sich von frustierenden Erlebnissen nicht überwältigen, sondern sucht nach einer anderen Lösung oder Alternative; lässt sich helfen oder trösten; versucht nach eine Pause noch einmal, ob es nicht doch gelingt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Reagiert offen auf sachliche Kritik oder Hinweise.",
+	    "additionalInformation": "Akzeptiert Vorschläge zu alternativen Vorgehensweisen und Fragen über sein Tun."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Versucht, Verantwortung zu übernehmen.",
+	    "additionalInformation": "Setzt sich selbst Ziele; sieht Schwierigkeiten teilweise voraus; überschätzt sich manchmal."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Ahmt stereotype Rollen bzw. Verhaltensweisen nach.",
+	    "additionalInformation": "Ahmt Gesichtsausdruk, Gesten oder Sprechweise von Erwachsenen nach; imitiert Rollen, z.B. Prinzessin, Popstar, Sänger, Bauarbeiter, Lehrer, Erzieher o. Ä.; teilweise stellt es stereotype bzw. typische Verhaltensweisen auch übertrieben dar."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Ordnet einfachen Situationen typische Gefühle zu.",
+	    "additionalInformation": "Wenn man ein Geschenk bekommt, freut man sich; wenn man allein in den Keller geht, hat man Angst; an ärgert such, wenn man geschubst wird, oder ist traurig."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Drückt Selbstkritik aus."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Organisiert Gruppenspiele und arrangiert sich mit anderen Kindern."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Unterscheidet zwischen Absicht und Versehen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Verbalisiert mögliche Konsquenzen seiner Handlung im Voraus."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beteiligt sich aktiv an Gruppendiskussionen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Schließt sich gern in kleinen Gruppen mit drei bis vier Kindern zusammen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "setzt sich verbal mit kritischen Lebensereignissen auseinander."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Interessiert sich für die Kindheit von Erwachsenen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Ordnet Situationen und Ereignissen typische Gefühle wie Angst, Ekel und Überraschung zu."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Hat Distanz zu sich selbst."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Versteht, dass Emotionen durch Erinnerungen ausgelöst werden können."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Beschäftigt sich mit dem Übergang zur Schule."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zeigt sich aufgabenorientiert und motiviert."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Zeigt differenzierte Kenntnisse über seine soziale Umwelt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Stellt seine Lehrkraft als Autorität über andere Erwachsene."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Hat enge freundschaftliche Beziehungen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Weiß, dass Menschen u.U. ihre wahren Gefühle verdecken oder überspielen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Schätzt seine Fähigkeiten hoch ein."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Identifiziert und benennt Situationen, die bestimmte komplexe Emotionen auslösen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Versteht, dass Menschen gemischte oder ambivalente Gefühle haben können."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Hat ein konkretes und instrumentelles Verständnis von Freundschaft."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Übernimmt in Gruppen gerne verantwortungsvolle Tätigkeiten und -Ämter-."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Arbeitet kooperativ mit einem anderen Kind an einer konkreten Aufgabe."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Grenz sich in größeren Gruppen vom anderen Geschlecht ab."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Charakterisiert Personen mit konkreten Eigenschaften."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Beschäftigt sich alleine bzw. mit sich selbst."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Identifiziert sich mit der Gruppe Gleichaltriger."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Spricht über das Erleben verschiedener komplexer Emotionen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beschäftigt sich mit Herkunft und Identität."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Äußert konkrete Befürchtungen und Sorgen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "In Freundschaften gewinnt gegenseitige emotionale Unterstützung und Hilfe an Bedeutung."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Ist sich seiner Position und der anderer in sozialen Gruppen bewusst."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Gerechtigkeit ist ein sozialer Wert mit emotionaler Besetzung."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Setzt erste kognitive Strategien zur Bewältigung von Schwierigkeiten ein."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Kennt soziale Darbietungsregeln und versucht, diese anzuwenden."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Berücksichtigt die Intention bei einem moralischem Urteil."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
@@ -920,300 +1070,300 @@
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Nimmt an Gruppenaktivitäten für kurze Zeit teil."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Ahmt Rollen detailiert nach und imitiert mimisch."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Zeigt Interesse und Aufmerksamkeitsspanne beim Malen, Basteln oder Steckspielen etc."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Spielt parallel mit einem anderen Kind."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Sucht sich selbst eine Beschäftigung."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Im Rollenspiel mit einer Puppe wird diese -beseelt-."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kombiniert im Rollenspiel verschiedene Tätigkeiten und Aspekte zu komplexen Handlungen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Setzt sich im Spiel mit verschiedenen alltäglichen Situaitonen und den damit zusammenhängenden Gefühlen auseinander."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Spielt erste Tisch- oder Gesellschaftsspiele mit einem Erwachsenen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Sortiert Gegenstände nach Farbe, Form oder Größe."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Sucht sich einen Partner für ein Rollenspiel."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Spielt allein und parallel spontan Spiele mit motorischem Charakter."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Spielt thematische Rollenspiele mit mehreren Kindern."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Produziert sich selbst in verschiedenen Rollen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Nutzt Sprache, um im Rollenspiel Gegenstände umzuwinden und dies anderen mitzuteilen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Verbindet Dinge oder Teile."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Im Rollenspiel mit anderen Kindern spielt das Kind seine Rolle komplementär."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Verwendet Dinge im _So-tun-als-ob-Spiel_ zunehmende unabhängig vom realen Kontext."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Bereitet sich auf eine Rolle vor, indem es sich gezielt verkleidet."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Wiederholt erlernte Tätigkeiten zum Vergnügen, losgelöst vom ursprünglichen Kontext."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Spielt Regelspiele mit Erwachsenen (und Kindern)."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Spielt mit Dingen, die auseinandergenommen und wieder zusammengefügt werden."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Begleitet seine Spiele oder sein Malen mit verständlichen Erläuterungen oder auch Dialogen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Konstruiert mit Sand."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Spielt mit Tönen, Rhythmen, Klängen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Entwickelt eine Spielidee, die es dann umsetzt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Im Rollenspiel werden Rollen differenziert und facettenreich dargestellt."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Vertieft sich ins Rollenspiel und ist hochkonzentriert."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Schlägt beim Spiel eine Reihenfolge vor."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Versucht, bei Konstruktionsspielen Pläne und Vorstellungen umzusetzen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kennt verschiedene Spiele mit einfachen Spielregeln."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Sammelt gezeilt bei Spaziergängen oder im Garten Dinge nach bestimmten Kriterien."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Entwickelt Rollenspiele, bei denen die Realität spielerisch umgestaltet wird."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Plant und konstruiert drinnen und draußen mit unsterschiedlichen Materialien."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Im Spiel wechselt es zwischen Spiel - und Metaebene hin und her."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Albert mit anderen gemeinsam."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Spielt Geschichten oder Erlebnisse später allein oder mit Freunden nach."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Möchte bei Gesellschaftsspielen gerne gewinnen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Entwickelt aus einer einfachen alltäglichen Handlung nach und nach ein Spiel mit Regeln."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Initiiert spontan erste motorische Vergleichsspiele."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zeigt sich flexibel in der Auswahl der Rolle beim Rollenspiel mit anderen Kindern."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Konstruiert Gebäude mit Innenaufteilung des Raumes."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Baut aus Steckbausteinen Fahrzeuge, Flugzeuge, Mobel o.Ä."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Führt allein Spiele aus, in denen unterschiedliche Rollen interagieren."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Legt langfristig Sammlungen nach eigenen Kriterien an."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Rollenspiele werden von Tag zu Tag fortgesetzt."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beim Konstruieren und Bauen setzt es sich Ziele, die es erreichen möchte."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Organisiert und spielt mit anderen Kindern ein Regelspiel."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Teilt Aufgaben im Spiel mit anderen Kindern gemeinsam auf."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Im Rollenspiel übernimmt es spontan weitere Rollen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Nutzt grobmotorische Aktivitäten zur Entspannung im Spiel."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Vorhandensein -echter- Requisiten im Rollenspiel ist von großer Bedeutung."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Spielt gerne Spiele mit viel Bewegung und motorischer Aktivität."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Betrachtet das Einhalten von Regeln bei Regelspielen als generelle Pflicht."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Spielt ausdauernd und mit einiger Routine Gesellschaftsspiele."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt und klärt Regelvarianten bei motorischen Spielen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Spielt Gruppenspiele mit gegnerischen Positionen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Malt oder bastelt engangiert und in sich versunken."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Spielt für sich allein Fikitionsspiele mit bevorzugtem Thema."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Spielt Computerspiele u.Ä. und tauscht sich mit Freunden darüber aus."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Sammelt und tauscht mit System."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Entwickelt mit einem Partner Ratespiele."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Setzt motorische Spiele mit Kleingruppen nach Unterbrechungen fort."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Spielt Rollenspiele im Grenzbereich von Fantasie und realem Leben."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Vollzieht Prozesse und Abläufe einer Berufs - und Themenwelt im Spiel nach."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Konstruiert komplexe Landschaften oder Szenerien."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beteiligt sich an motorischen Wettberwerbsspielen, bei denen der Beste ermittelt wird."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Versteht, dass Spielregeln nichts Absolutes sind."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Genießt körperliche Rangelspiele."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Plant und führt ein Bühnenprogramm vor Publikum mit anderen Kindern durch."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Spielt Fiktionsspiele, die die Unabhängigkeit von Erwachsenen zum Thema haben."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zeigt sich bei Mannschaftsspielen zunehmend teamorientiert."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
@@ -1225,300 +1375,300 @@
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versucht nun bei allen Wortarten, die Wörter nach den Regeln der Grammatik zu verändern."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Versteht und verwendet verschiedene Verhältniswörter (Präpositionen)."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Benutzt Sprache nun auch zum Kommunizieren mit anderen Kindern."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beantwortet bereitwillig verschiedene Fragen außer mit -Wann?- und -Warum?-."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Teilt Gedanken und Informationen mit."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Spricht in Drei - und Vierwortäußerungen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Nimmt sprachlich auf Vergangenes Bezug bzw. beantwortet Fragen dazu."
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Stellt einfache Fragen, auch wenn es manchmal die Antwort zu kennen scheint."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Berichtet von Ereignissen und teilt Informationen in vollständigen Sätzen mit."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Setzt sich mit dem Inhalt von Erzählungen, Geschichten oder Märchen auseinander."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Verbindet ganze Sätze und Haupt - und Nebensätze miteinander."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Das Perfekt wird, bis auf einige unregelmäßige Formen, korrekt gebildet."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Versteht und benutzt unbestimmte Zahlenwörter und Umstandswörter für Ort und Zeit."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Hört konzentriert zu."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Verwendet Adjektive und Adverbien zur Beschreibung von Bildern und Situationen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Stellt Fragen, um mehr INformationen oder Details zu erfahren."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beginnt von sich aus eine Unterhaltung mit Erwachsenen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Benutzt einfache Konjunktionen als Satzverbindung."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Nimmt Bezug auf vergangenes Erlebnisse."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Stellt sich in der Kommunikation auf jüngere Kinder ein."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Verwendet Wörter, die mentale Zustände beschreiben."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Benutzt bildhafte Vergleiche."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Bildet komplexere Satzkonstruktionen mit verschiedenen Konjunktionen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Verwendet Steigerungsformen bei Adjektiven."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Verwendet Haupt - und Nebensatzkonstruktionen häufig im Alltag."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beschäftigt sich mit der Lautstruktur von Wörtern."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Gebraucht Ausrufwörter."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Bildet Relativsätze."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Erklärt den Inhalt seines Spiels oder eines Bildes detailreich."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Unterhält sich mit anderen Kindern über Themen, die es emotional beschäftigen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Verwendet Präpositionen wie -oben, vor, neben, zwischen, mittendrin-."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Nutzt Sprache argumentativ."
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Erklärt die Bedeutung von Wörtern mit konkreten Merkmalen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Erzählt Geschichten oder Märchen im Präteritum."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Führt mit einer kleinen Gruppe von Kindern gemeinsame Planungsgespräche."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beginnt, Aufzählungen zu verwenden."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Artikuliert deutlich und korrekt."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Ahmt Schriftzüge nach."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Fragt nach der Bedeutung ihm unbekannter Wörter."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Berichtet Ereignisse mit vier Handlungsschritten in sinnvoller Reihenfolge."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Führt zweiteilige Anweisungen aus, die -bevor- oder -nachdem- enthalten."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Greift Bemerkungen des anderen auf bzw. bezieht sich darauf."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Verfügt über spezifischen Wortschatz für bestimmte Bereiche."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Nimmt ein bekanntes Buch zur Hand und -liest vor-."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Bildet Konjunktivsätze mit -hätte-, -würde- und -könnte-."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Versucht, in vertrauten Bücher einzelne Wörter zu erkennen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Verwendet unregelmäßige, aber häufig vorkommende Formen des Präteritums."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Findet im Alltag spontan Reime und bildet Reime gezielt."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Versucht, Worte zu schreiben."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Setzt sich intensiv mit der Schriftsprache auseinander."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versteht und verwendet Bezeichnung für komplexen Emotionen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Beginnt, erste Sätze flüssig zu lesen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Versteht einfache ironische Äußerungen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Schreibt von sich aus."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Bringt sich in laufende Gespräche ein."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Zerlegt mehrsilbige Wörter."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Versteht und verwendet Präpositionen wie -gegenüber-, -dahinter-, -darunter-, -davor-."
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Strukturiert sich Wörter auf Silbenebene."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Fasst komplexere Inhalte in einem Satz zusammen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Nutzt beim Erzählen geschichtenübliches Repertoire."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Nutzt das Schreiben im Alltag."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Berichtet gerne von persönlichen Erlebnissen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Ist sich darüber bewusst, dass Kommunikation missverständlich sein kann."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Liest einfache Texte schnell und flüssig."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Hat Spaß an extravaganten Ausdrücken und Übertragungen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Schreibt ein kleines mehrzeiliges Gedicht mit Reimen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Kennt und verwendet in Bereichen seines Interesses verschiedene Fachbegriffe."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Benutzt und versteht Redewendungen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Schreibt kürzere Texte motiviert und konzentriert ab."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Hört einem Hörbuch oder einem Vorleser konzentriert (ca. 30 Minuten)."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Bemüht sich, leserlich zu schreiben, und achtet auf die Form."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Liest Bücher, Zeitschriften und Comics."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Unterscheidet verschiedene Textarten."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Erzählt oder schreibt Geschichten mit betontem Planbruch."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Entkräftet Argumente anderer, um eigene Interessen zu vertreten."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
@@ -1530,300 +1680,300 @@
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zeigt Verständnis von Quantitätsunterschieden."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Kennt einige Farben."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Verneint Aussagen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Handelt intentional und teilt sein Vorhaben sprachlich mit."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Bildet mit verschiedenen Gegenständen Reihen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Versteht verschiedene einfache Präpositionen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zieht aus Hinweisen Schlüsse und spricht darüber."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Setzt sich mit Größen und Größenunterschieden auseinander."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Nennt die Zahlen von 1 bis 10 in richtiger Reihenfolge."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Weiß, dass das Bild, das man sieht, von der Position abhängig ist."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "rinner sich an Aktionen, die am Vortag geplant oder versprochen wurden."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Kategorisiert Gegenstände seiner Umwelt in Basis - und Subkategorien."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beschäftigt sich mit Puzzles."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Versteht und gebraucht Mengenbegriffe bis vier sicher."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Erinnert sich und erzählt detailreich von vergangenen Erlebnissen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Entwickelt Vorstellungen und Ideen und versucht, diese umzusetzen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Wiederholt mehrzeilige Texte bekannter, vertrauter Fingerspiele und Lieder."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Versteht duale Repräsentation von Symbolen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Stellt Dinge kontrastierend dar."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Weiß um die allgemeine Funktion von Dingen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Zählt aus dem Gedächtnis vier Dinge auf."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beschäftigt sich mit der Bedeutung von Buchstaben und Zahlen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Verwendet verschiedene einfache Zeitbegriffe."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Reagiert auf die Frage: -Wie viele sind das?-, indem es zählt."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beschäftigt sich mit der Dimension des Raumes."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Nutzt Ordinalzahlen, um eine Reihenfolge festzulegen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Versucht, abstrakte Mengenvorstellungen in Zahlen ausdrücken."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Setzt Rahmenpuzzles mit bis zu 35 Teilen zusammen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Setzt sich mit Formen auseinander."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Erinnert sich detailreich an Ereignisse, die bis zu einem Jahr zurückliegen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Versteht und beschreibt den Handlungsverlauf einer Bilderserie."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Bringt Gegenstände in eine systematische Ordnung."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Hat eine Mengenvorstellung im Zehnerraum."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Setzt sich kritisch mit Aussagen auseinander."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Folgt einer verbalen Schritt-für-SChritt-Anleitung."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Hat Spaß daran, Dinge aus dem Gdächtnis abrufen zu können."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Benutzt eigenständig das Abzählen von Objekten, um Handlungen zu planen."
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Beschäftigt sich mit Zahlenraum bis 20."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Fragt aktiv nach der Bedeutung von Wörtern oder abstrakten Begriffen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Versucht, Erklärungen für Phänomene zu finden."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Unterscheidet und vergleicht Größe und Gewicht."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Löst einfache Additionsaufgaben bei Alltagstätigkeiten."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Unterscheidet zwischen eigenen Gedanken und Vorstellungen und denen anderer."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Nutzt und entwickelt Symbole."
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Erkennt und benennt mehrere Buchstaben und Ziffern."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Überprüft Gleichheit und Ungleichheit von zwei Mengen von Gegenständen."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Rechnet spontan einfache Subtraktionen, die sich aus dem Alltag ergeben."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Vergleicht zwei fast identische Bilder miteinander und findet die Unterschiede."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Stellt aus einer großen Menge von Gegenständen engagiert verschiedene Ordnungen her."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Hat eine Vorstellung davon, was andere erwarten, und spielt mit deren Erwartung."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Vollzieht Entstehungsprozesse gedanklich Schritt für Schritt nach und führt diese aus."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Rechnet Additionen und Subtraktionen im Zahlenraum bis 20."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Erfragt Begründungen für Naturphänomene und -erscheinungen und denkt darüber nach."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Erkennt geläufige Geldstücke und -scheine bis 20 Euro."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Nutzt das kurzzeitige geistige Wiederholen als Gedächtnisstrategie."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Experimentiert mit dem Zusammenspiel von Gewicht, Länge und Schwerkraft."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Schätzt Volumen von Flüssigkeiten oder Massen in verschiedenen Behältern sicher ein."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Entwickelt eine praktische Vorstellung von Raum und Zeit."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Geht mit Geld um - zählt, rechnet und plant."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Packt seine Schultasche selbstständig und umsichtig."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hat Spaß an verschiedenen einfachen Rätseln."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Beginnt, über seine Gedankengänge nachzudenken, sein Denken zu reflektieren."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Zieht logische Schlüsse."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Ist sicher im Zahlenraum is hundert."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Geht beim Suchen von Dingen systematisch vor."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Verfügt über räumliches Vorstellungsvermögen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Stellt Proportionen und Entfernung der Figuren im Raum zeichnerisch dar."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Nutzt über- und untergeordnete Kategorien zum Denken im Alltag."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Kennt und verwendet verschiedene Lerntechniken und -strategien."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Denkt mehrere Schritte im Voraus und antizipiert mögliche Reaktionen anderer."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Untersucht Aussagen und Hypothesen kritisch auf mögliche Widersprüche."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Arbeitet für eine halbe Stunde konzentriert."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Löst schriftlich Additions- und Subtraktionsaufgaben mit sechsstelligem Ergebnis."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Erschließt sich selbstständig Informationen aus Sachtexten und stellt diese dar."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
@@ -1835,300 +1985,305 @@
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Wirft einen Ball mit einer Hand.",
+	    "additionalInformation": "Steht mit beiden Füßen auf der Stelle und macht mit dem Arm, in der es Ball hat, eine schnelle Bewegung nach vorne, wobei das Loslassen des Balls manchmal leicht verzögert erfolgt."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Springt mit beiden Füßen vom Boden ab."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Rollt sich einmal um die Längsachse.",
+	    "additionalInformation": "Rollt sich auf der Matzratze oder von der Matzratze herunter; dreht sich im Bett oder auf dem Boden einmal um sich selbst."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Bewegt sich auf einem Dreirad vorwärts oder fährt Laufrad.",
+	    "additionalInformation": "Sitzt auf einem Dreirad und bewegt sich mit den Füßen am Boden vorwärts; fährt Laufrad."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Versucht, einen großen Ball zu fangen.",
+	    "additionalInformation": "Streckt beide Arme nach vorne, den Wurf erwartend, hat aber noch Schwierigkeiten, den Ball festzuhalten bzw. rechtzeitig an den Körper zu pressen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Geht die Treppe im Nachstellschritt ohne Festhalten hinauf.",
+	    "additionalInformation": "Geht Treppen ohne Festhalten hinauf, z.B. breite Treppen ohne Geländer oder wenn es in der Mitte der Treppe läuft."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Bewegt sich auf allen Vieren."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Beginnt, mit einem Bein auf einer Mauer zu balancieren."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Klettert an Klettergerüsten und rutscht eine Rutsche hinunter."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Kickt einen Ball."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Fährt Dreirad."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Fängt einen großen Ball mit Körperberührung."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Trägt große Gegenstände die Treppe hinauf."
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Geht die Treppe im Wechselschritt hinauf."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Springt eine oder zwei Treppenstufen mit beiden Füßen gleichzeitig hinunter."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Balanciert einige Meter auf einer niedrigen Mauer."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Trägt ein mit Flüssigkeit gefülltes Glas, ohne etwas zu verschütten."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hüpft auf einem Bein."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Springt eine kurze Distanz nach Vorne."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Fährt sicher und schnell Dreirad."
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Variiert Tempo und Körperbewegungen willkürlich."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Springt mit beiden Füßen von etwas hinunter und wiederholt dies gern."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Balanciert für kurze Zeit auf einem Bein."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Geht die Treppe im Wechselschritt hinauf und hinunter."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Fängt Bälle in Brusthöhe sicher."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Balanciert an einer Hand sicher über eine umgedrehte Turnbank."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Hüpft ein paar Schritte auf einem Bein."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Wirft einen Ball mit beiden Händen über den Kopf hinweg drei bis vier Meter weit."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Geht eine Treppe im Wechselschritt ohne Festhalten hinauf und hinunter."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Geht rückwärts."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Versucht, eine kurze Strecke im Hopserlauf zu laufen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Hüpft mehrfach hintereinander mit geschlossenen Füßen vom Boden ab."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "Fängt einen Ball mit den Händen."
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Ist geschickt und flink im Kletter, Springen und Rutschen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Tanzt rhythmisch zu Musik."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Springt auf eine Treppenstufe oder einen kleinen Absatz."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Steht sicher auf einem Bein."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Wirft einen kleinen Ball mit Schwung nach vorne."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "-"
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Hüpft mehrmals auf der Stelle oder eine kleine Streke in Schlusssprüngen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Balanciert auf einer Linie oder einem niedrigen Balken."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Rennt schnell und leichtfüßig."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Schaukelt sich selbst an."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Spielt mit Geräten zur motorischen Koordination."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "-"
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Fährt Fahrrad."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Macht einige Seilsprünge."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Wirft kleine Bälle und Gegenstände in ein bis zwei Meter entfernte Kisten oder Körbe."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Fängt und wirft flüssiger."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beginnt, auf Rollschuhen oder Inliner zu laufen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Experimentiert beim Schaukeln."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Bewegt sich rhythmisch und zügig im Hopserlauf."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Prellt einen Ball mehrfach auf den Boden."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Macht einige Hampelmannsprünge."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Schlägt einien vollständigen Purzelbaum."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Wirft einen Ball zielgerichtet."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Fängt einen Ball mit beiden Händen ohne Körperberührung."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Springt aus dem Lauf ab."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Fängt Bälle auf, auch wenn diese nicht genau gezielt sind."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Klettert auf und über Mauern oder Zäune in Brusthöhe."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Prellt einen Ball im Gehen wiederholt auf den Boden."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hat Spaß am schnellen Wechsel von Bewegungsarten und Haltungen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "-"
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Fängt einen Ball im Lauf und wirft zügig weiter."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schwimmt, taucht und springt ins Wasser."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Bewegt sich bei Lauf- und Fangspielen flüssig und geschickt."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Interessiert sich für Akrobatik und Artistik, spielt Zirkus."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Läuft geschickt Inliner, Schlittschuh, Rollschuh oder Skateboard."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Ist sportlich aktiv und experimentierfreudig."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Springt aus dem Stand ca. einen Meter weit."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Balanciert vorwärts und rückwärts."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Motorisches und sportliches Geschick ist von großer Bedeutung."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Beginnt, Spiele wie Federball, Tennis und Tischtennis zu spielen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Setzt wechselnde Rhythmen motorisch um."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Trainiert gezielt gewisse Fertigkeiten sowie Geschick und Ausdauer darin."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }
@@ -2140,300 +2295,300 @@
       "7": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Drückt Pasten und Cremes aus Tuben aus."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Öffnet und schließt eine Schere oder Zange mit gleichem Prinzip."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Beschäftigt sich ausgiebig mit Verschlüssen an Kleidern, Puppenkleidern, Taschen u.a."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Legt schwierige Formen und Figuren ins Formbrett."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Zeichnet Linien, Ovale und offene Kreise auf Papier."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Setzt Schraubbewegungen ein."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "8": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Trägt ein Tablett mit mehreren Gegenständen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Baut mit Bausteinen einfache Brücken."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Beim Zeichnen wird die Hand nun vom Auge geführt."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Schneidet Papier mit der Schere."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hantiert mit Papier auf vielfältige Art und Weise."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Nutzt den Dreipunktgriff sicher, um kleine Gegenstände zu greifen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "9": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Ahmt Schrift nach."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Klebt Papierschnipsel zu einem selbsterfundenen Muster auf ein Blatt."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Bearbeitet plastisches Material."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Zeichnet verschiedene Grundformen und kombiniert diese zu Figuren."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Tuscht mit Pinsel und Farbe."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Fädelt ein und auf."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "10": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Baut hohe Türme."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Stellt mit plastischem Material Gesichter und Figuren dar."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Schneidet mit der Schere einfache Formen aus."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Baut Pfade, Wege, Tunnel im Sand."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Hantiert mit dem Zangengriff auch mit kleinteiligem Zubehör präzise."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Beschäftigt sich intensiv mit verschiedenen Steckspielen."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "11": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Faltet Papier in der Mitte und diagonal."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schneidet mit einer Schere entlang einer Linie verschiedene Formen aus."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Gießt Flüssigkeiten aus verschiedenen Behältern um."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Zeichnet erkennbar verschiedene geometrische Figuren."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Spielt mit kleineren Püppchen oder Figuren und diversem kleinteiligem Zubehör."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "-"
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "12": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Schraubt routiniert mit Schraubenzieher und -schlüssel."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Benutzt beim Spielen mit kleinen Bausteinen beide Hände unabhängig voneinander."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Schlägt Nägel mit Hammer ein."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Fädelt einen Faden in eine große Nadel ein näht einige Stiche."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Sammelt mit einer Hand mehrere Gegenstände auf."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Macht Knoten in Schnüre, Bänder oder Seile."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "13": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Malt einfache Formen oder Figuren aus."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schreibt seinen Vornamen aus."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Beginnt, Gegenstände as Schablone zu benutzen."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Hält den Stift im Dreipunktgriff zunehmend lockerer."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Seine Zeichnungen enthalten kleine Details."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "-"
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "14": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Klebt sorgfältig mit Kleber aus der Tube oder einem Klebestift."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schreibt viele verschiedene Buchstaben des Alphabets."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Zeichnet geometrische Figuren, einfache Pläne oder Muster ab."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Setzt beim Malen fortlaufende, rückwärtsgerichtete Bewegungen ein."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Geht mit einer Pinzette um."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Interessiert sich für Aufgaben oder Rätsel zur Auge-Hand-Koordination."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "15": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Blickt schnell auf und ab und folgt einer Linie mit den Augen."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schreibt Zahlen und Buchstaben."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Faltet einfache Figuren aus Papier."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Wickelt Garn, Faden oder Schnur auf."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Beschäftigt sich mit Spielen, die feinmotorische Präzision erfordern."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Malt verschiedene, auch kleine Formen flächendeckend aus."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "16": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Frottiert Münzen und andere Gegenstände."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Zieht Striche mit dem Lineal."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Interessiert sich für einfache Handarbeiten mit Wolle und Garn."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Malt nach Motiven und zeichnet nach Vorlagen."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Setzt die Schere als Werkzeug vielfältig ein."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Faltet aus Papier auch komplizierte Dinge."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "17": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Führt komplizierte Techniken mit Bändern, Schnüren und Garn durch."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schreibt flüssig und schneller."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Bewegt die Finger beider Hände differenziert und koordiniert."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Geht sicher mit dem Lineal um."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Schreibt auf der Linie und bleibt innerhalb der Linien und Kästchen."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Formt Figuren mit Details aus plastischem Material."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       },
       "18": {
         "entries": [
           {
-            "description": "Beschreibung 1"
+            "description": "Ist beim Ein- und Aufkleben um Exaktheit bemüht."
           },
           {
-            "description": "Beschreibung 2"
+            "description": "Schreibt häufiger längere Zeit an einem Stück."
           },
           {
-            "description": "Beschreibung 3"
+            "description": "Führt knifflige Tätigkeiten mit kleinen Teilen aus."
           },
           {
-            "description": "Beschreibung 4"
+            "description": "Geht mit verschiedenen Werkzeugen sicher und ausdauernd um."
           },
           {
-            "description": "Beschreibung 5"
+            "description": "Interessiert sich für komplexere Handarbeiten."
           },
           {
-            "description": "Beschreibung 6"
+            "description": "Benutzt Werkzeuge, die eine Kombination von Kraft und Genauigkeit erfordern."
           },
           {
-            "description": "Beschreibung 7"
+            "description": "-"
           }
         ]
       }

@@ -31,7 +31,7 @@ const error: any = {};
     await access(targetDataFile);
   } catch {
     console.log(
-      ` No data file found, copying ${initialDataFile} to ${targetDataFile}`
+      `No data file found, copying ${initialDataFile} to ${targetDataFile}`
     );
     try {
       await copyFile(initialDataFile, targetDataFile);
