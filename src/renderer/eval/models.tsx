@@ -13,6 +13,7 @@ export type Person = {
   lastChanged: string;
   categories: Categories;
   displaySettings?: DisplaySettings;
+  note?: string;
 };
 
 export type DisplaySettings = {

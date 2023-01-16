@@ -1,4 +1,4 @@
-import moment from 'moment';
+import dayjs from 'dayjs';
 import {
   BIRTHDAY_DATE_FORMAT,
   Category,
@@ -63,9 +63,9 @@ export function getPhaseForBirthday(birthday: string): number {
 }
 
 function ageInMonth(birthday: string): number {
-  const birthdayMoment = moment(birthday, BIRTHDAY_DATE_FORMAT);
-  const now = moment();
-  const diffMonth = now.diff(birthdayMoment, 'months');
+  const birthdayDate = dayjs(birthday, BIRTHDAY_DATE_FORMAT);
+  const now = dayjs();
+  const diffMonth = now.diff(birthdayDate, 'months');
   return diffMonth;
 }
 

@@ -63,7 +63,13 @@ a:hover {
   align-items: center;
   margin: 20px 0;
 }
+
 */
+
+body {
+  margin: 0;
+}
+
 @media print {
   .header {
     display: none !important;

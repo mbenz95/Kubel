@@ -21,7 +21,7 @@ import { useMemo, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { evalState } from 'renderer/eval/evalState';
 import { useSnapshot } from 'valtio';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import { calculateResult, Graph } from './Graph';
 import {
   CategoryData,
@@ -39,6 +39,7 @@ import {
   getCurrentPhaseByBirthday,
   PhaseEntry,
 } from './Utils';
+import NoteArea from './NoteArea';
 
 const { Panel } = Collapse;
 const { Text } = Typography;
@@ -334,7 +335,7 @@ export default function PersonEvaluation({
         <h1 className={styles.title}>{person.name}</h1>
         <div>
           <Link to={`/print/${id}`} style={{ marginRight: '10px' }}>
-            <Button icon={<PrinterOutlined />}>Zur Druckansicht</Button>
+            <Button icon={<PrinterOutlined />}>Drucken / Exportieren</Button>
           </Link>
           <Button
             loading={isSaving}
@@ -349,6 +350,7 @@ export default function PersonEvaluation({
       <BirthdayDisplay />
       <CategoryTabs />
       <Graph showControls />
+      <NoteArea />
     </>
   );
 }
@@ -359,7 +361,7 @@ function BirthdayDisplay() {
   const defaultDate = () =>
     person?.birthday == null
       ? undefined
-      : moment(person.birthday, BIRTHDAY_DATE_FORMAT).local();
+      : dayjs(person.birthday, BIRTHDAY_DATE_FORMAT);
   const [date, setDate] = useState(defaultDate());
   const onAccept = () => {
     setEdit(false);
@@ -370,11 +372,11 @@ function BirthdayDisplay() {
     setDate(defaultDate); // reset to default
     setEdit(false);
   };
-  const onDateChanged = (curDate: moment.Moment | null) => {
+  const onDateChanged = (curDate: dayjs.Dayjs | null) => {
     setDate(curDate ?? undefined);
   };
   const dateParsed =
-    date == null ? undefined : moment(date, BIRTHDAY_DATE_FORMAT);
+    date == null ? undefined : dayjs(date, BIRTHDAY_DATE_FORMAT);
   return (
     <>
       <h4 style={{ marginBottom: '-5px' }}>

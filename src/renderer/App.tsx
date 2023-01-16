@@ -6,7 +6,7 @@ import {
   Link,
   useNavigate,
 } from 'react-router-dom';
-import { Badge, Button, Layout } from 'antd';
+import { Badge, Button, Layout, message } from 'antd';
 import { Content, Header } from 'antd/lib/layout/layout';
 import {
   ArrowLeftOutlined,
@@ -22,15 +22,15 @@ import {} from './preload';
 import PrintView from './eval/PrintView';
 import { sleep } from './Utils';
 import styles from './App.module.css';
-import 'antd/dist/antd.css';
 import SettingsPage from './Settings';
 import { initUpdateService, updateState } from './update/UpdateService';
+import { loadConfig } from './ConfigState';
 
 function showError(err: any) {
   alert(err);
 }
 
-async function loadData<T>(file: string, setData?: Dispatch<T>) {
+async function loadData<T extends object>(file: string, setData?: Dispatch<T>) {
   const result: T | { error: string } =
     await window.electron.ipcRenderer.invoke('loadfile', file);
   if ('error' in result) {
@@ -81,6 +81,16 @@ function RoutedApp() {
   useEffect(() => {
     initUpdateService();
   }, []);
+  useEffect(() => {
+    loadConfig()
+      .then((result) => {
+        if (!result) {
+          message.error('Error: could not load config file');
+        }
+        return undefined;
+      })
+      .catch((err) => message.error(err));
+  }, []);
 
   useEffect(() => {
     // display initial errors if any
@@ -90,14 +100,13 @@ function RoutedApp() {
         showError(error.error);
       }
     })();
-
-    loadData('data.json', setData);
+    loadData('data.json', (d: Data) => setData(d));
   }, []);
   const [categories, setCategories] = useState<CategoryData | undefined>(
     undefined
   );
   useEffect(() => {
-    loadData('categories.json', setCategories);
+    loadData('categories.json', (cd: CategoryData) => setCategories(cd));
   }, []);
   const handleSavePerson = async (id: string, person: Person) => {
     setIsSaving(true);
@@ -125,6 +134,15 @@ function RoutedApp() {
     newData.people[id] = person;
 
     setData(newData);
+    setIsSaving(false);
+  };
+  const handleEditPerson = async (id: string, name: string) => {
+    setIsSaving(true);
+    if (data != null) {
+      data.people[id].name = name;
+    }
+    setData(data);
+    await updatePeopleFile(id, data?.people[id]);
     setIsSaving(false);
   };
 
@@ -155,6 +173,7 @@ function RoutedApp() {
                 categoryData={categories}
                 onDeletePerson={handleDeletePerson}
                 onAddPerson={handleAddPerson}
+                onEditPerson={handleEditPerson}
                 isSaving={isSaving}
               />
             }

@@ -18,12 +18,12 @@ import { filterPhasesByAge } from './Utils';
 export const Graph = ({ showControls }: { showControls: boolean }) => {
   const { person, categoryData } = useSnapshot(evalState);
   const baseline = person?.displaySettings?.baseline ?? 15;
-  const setBaseline = (v: number) => {
-    if (evalState.person == null) return;
+  const setBaseline = (v: number | null) => {
+    if (evalState.person == null || v == null) return;
     setInitialDisplaysettings(evalState.person).baseline = v;
   };
-  const setMinValue = (v: number) => {
-    if (evalState.person == null) return;
+  const setMinValue = (v: number | null) => {
+    if (evalState.person == null || v == null) return;
     setInitialDisplaysettings(evalState.person).minValue = v;
   };
   const minValue = person?.displaySettings?.minValue ?? 6;

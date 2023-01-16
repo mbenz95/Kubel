@@ -1,4 +1,4 @@
-import { ipcMain, app } from 'electron';
+import { ipcMain, app, dialog } from 'electron';
 import { access, mkdir, readFile, writeFile, copyFile } from 'fs/promises';
 import path from 'path';
 import { checkUpdate, runUpdate } from './updater';
@@ -27,36 +27,28 @@ const error: any = {};
   const initialDataFile = path.join(appResourceDir, 'data.json');
   const targetDataFile = path.join(kubelDataDir, 'data.json');
 
-  try {
-    await access(targetDataFile);
-  } catch {
-    console.log(
-      `No data file found, copying ${initialDataFile} to ${targetDataFile}`
-    );
-    try {
-      await copyFile(initialDataFile, targetDataFile);
-    } catch (err: any) {
-      error.error = err;
-    }
-  }
+  const configDefaultFile = path.join(appResourceDir, 'config.json');
+  const configFile = path.join(kubelDataDir, 'config.json');
 
   const initialCategoriesFile = path.join(appResourceDir, 'categories.json');
   const targetCategoriesFile = path.join(kubelDataDir, 'categories.json');
-  try {
-    await access(targetCategoriesFile);
-  } catch {
-    console.log(
-      ` No categories file found, copying ${initialDataFile} to ${targetCategoriesFile}`
-    );
+
+  async function copyDefaultFile(dataFile: string, defaultFile: string) {
     try {
-      await copyFile(
-        initialCategoriesFile,
-        path.join(kubelDataDir, 'categories.json')
-      );
-    } catch (err) {
-      error.error = err;
+      await access(dataFile);
+    } catch {
+      console.log(`No data file found, copying ${defaultFile} to ${dataFile}`);
+      try {
+        await copyFile(defaultFile, dataFile);
+      } catch (err: any) {
+        error.error = err;
+      }
     }
   }
+
+  copyDefaultFile(targetDataFile, initialDataFile);
+  copyDefaultFile(configFile, configDefaultFile);
+  copyDefaultFile(targetCategoriesFile, initialCategoriesFile);
 })();
 
 export default function setupIcpHandler() {
@@ -82,6 +74,8 @@ export default function setupIcpHandler() {
     }
   });
 
+  ipcMain.handle('loadConfig', async (_event) => {});
+
   ipcMain.handle('receiveError', async () => {
     return error;
   });
@@ -102,3 +96,18 @@ export default function setupIcpHandler() {
     return info?.updateInfo;
   });
 }
+
+ipcMain.handle('printToPdf', async (evnt, options) => {
+  const saveSelection = await dialog.showSaveDialog({
+    title: 'Wähle Datei',
+    defaultPath: options.name,
+    filters: [{ name: 'PDF', extensions: ['pdf'] }],
+  });
+  if (!saveSelection.canceled && saveSelection.filePath != null) {
+    console.log('Save destination ', saveSelection.filePath);
+    const data = await evnt.sender.printToPDF({
+      pageSize: 'A4',
+    });
+    await writeFile(saveSelection.filePath, data);
+  }
+});

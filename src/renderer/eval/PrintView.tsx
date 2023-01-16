@@ -12,7 +12,7 @@ import {
 import { proxy, useSnapshot } from 'valtio';
 import { useEffect } from 'react';
 import { SliderMarks } from 'antd/lib/slider';
-import { PrinterOutlined } from '@ant-design/icons';
+import { ExportOutlined, PrinterOutlined } from '@ant-design/icons';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { v4 as uuidv4 } from 'uuid';
@@ -32,6 +32,7 @@ type PrinterCategoryOption = {
 };
 type PrinterState = {
   showGraph: boolean;
+  showNotes: boolean;
   tablePerRow: number;
   categories: { [id: string]: PrinterCategoryOption };
   fontSizeEm: number;
@@ -39,6 +40,7 @@ type PrinterState = {
 
 const printerState = proxy<PrinterState>({
   showGraph: true,
+  showNotes: true,
   categories: {},
   tablePerRow: 2,
   fontSizeEm: 1,
@@ -68,7 +70,6 @@ function PrintCategories() {
 export default function PrintView() {
   const evalStateSnapshot = useSnapshot(evalState);
   const { person, categoryData: catData } = evalStateSnapshot;
-  const state = useSnapshot(printerState);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const categories: CategoryData = catData ?? {};
   useEffect(() => {
@@ -89,24 +90,11 @@ export default function PrintView() {
   const onPrintClicked = () => {
     window.print();
   };
-  /*
-    // TODO: export pdf
+
   const onSavePdfClick = async () => {
-    const body = document.body;
-    const opt = {
-      margin: 1,
-      filename: 'export.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-    };
-    document.body.classList.add('pdf-export');
-    await sleep(1000);
-    html2pdf().set(opt).from(body).save();
-    // await sleep(10000)
-    // document.body.classList.remove('pdf-export') fuck....
+    const filename = `kubel-${evalState.person?.name}.pdf`;
+    window.electron.ipcRenderer.invoke('printToPdf', { name: filename });
   };
-  */
 
   return (
     <div className={styles.printPageContainer}>
@@ -114,14 +102,23 @@ export default function PrintView() {
         <div className={styles.printHeader}>
           <Title level={2}>Druckansicht</Title>
           <Affix offsetTop={5}>
-            <Button
-              onClick={onPrintClicked}
-              type="primary"
-              className={styles.printButton}
-              icon={<PrinterOutlined />}
-            >
-              Drucken
-            </Button>
+            <div>
+              <Button
+                type="primary"
+                icon={<ExportOutlined />}
+                onClick={onSavePdfClick}
+              >
+                Als PDF exportieren
+              </Button>
+              <Button
+                onClick={onPrintClicked}
+                type="primary"
+                className={styles.printButton}
+                icon={<PrinterOutlined />}
+              >
+                Drucken
+              </Button>
+            </div>
           </Affix>
         </div>
       </div>
@@ -134,11 +131,23 @@ export default function PrintView() {
           </p>
           <Title level={1}>{person?.name}</Title>
           <PrintCategories />
-          {state.showGraph && <Graph showControls={false} />}
+          <GraphToggle />
+          <NoteToggle />
         </div>
       </div>
     </div>
   );
+}
+
+// factor out the toggles so we only have to re-render those on change
+function GraphToggle() {
+  const state = useSnapshot(printerState);
+  return <>{state.showGraph && <Graph showControls={false} />}</>;
+}
+
+function NoteToggle() {
+  const state = useSnapshot(printerState);
+  return <>{state.showNotes && <NoteArea />}</>;
 }
 
 function PrintViewControls() {
@@ -193,6 +202,15 @@ function PrintViewControls() {
         }}
       >
         <Title level={4}>Graph anzeigen</Title>
+      </Checkbox>
+      <Checkbox
+        style={{ margin: '0', marginBottom: '24px' }}
+        checked={state.showNotes}
+        onChange={(e) => {
+          printerState.showNotes = e.target.checked;
+        }}
+      >
+        <Title level={4}>Notizen anzeigen</Title>
       </Checkbox>
       <div className={styles.sliderContainer}>
         <Text>Tabellen pro Zeile</Text>
@@ -374,4 +392,35 @@ function minMaxKey(
   const min = Math.min(...keys);
   const max = Math.max(...keys);
   return [min, Math.min(phase, max)];
+}
+
+function NoteArea() {
+  const { person } = useSnapshot(evalState);
+  const note = person?.note ?? '';
+  return (
+    <>
+      <div
+        style={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <Typography.Title level={3} style={{ marginLeft: '24px' }}>
+          Notizen
+        </Typography.Title>
+        <div
+          style={{
+            border: '1px solid black',
+            flexGrow: '1',
+            margin: '0 24px 24px 24px',
+            padding: '8px 8px 200px 8px',
+          }}
+        >
+          {note}
+        </div>
+      </div>
+    </>
+  );
 }
