@@ -1,3 +1,7 @@
+## 1.7.1
+
+- Update print / export pdf
+
 ## 1.7
 
 - Allow renaming of people
