@@ -122,8 +122,10 @@ export default function PrintView() {
           </Affix>
         </div>
       </div>
-      <PrintViewControls />
-      <Divider />
+      <div className="hiddenPrint">
+        <PrintViewControls />
+        <Divider />
+      </div>
       <div className={styles.printAreaContainer}>
         <div className={styles.printArea}>
           <p style={{ float: 'right' }}>
@@ -248,7 +250,12 @@ function PrintCategory({ categoryId }: { categoryId: string }) {
     <div className={styles.category}>
       <Row gutter={24}>
         {phases.map((phase) => (
-          <Col key={phase.id} span={span} style={{ marginTop: '10px' }}>
+          <Col
+            key={phase.id}
+            span={span}
+            style={{ marginTop: '10px' }}
+            className={styles.pageGroup}
+          >
             <Title level={5} style={{ marginBottom: '-1px' }}>
               {categoryDefinition.name} {phase.phaseDefinition.name || phase.id}
             </Title>
@@ -263,11 +270,9 @@ function PrintCategory({ categoryId }: { categoryId: string }) {
 function SimpleTable({ phaseEntry }: { phaseEntry: PhaseEntry }) {
   const state = useSnapshot(printerState);
   const def = phaseEntry.phaseDefinition;
-  const cellClass = (rowIdx: number, idx: number) =>
-    idx === phaseEntry.phase.entries[rowIdx]
-      ? `${styles.crossed1} ${styles.crossed2}`
-      : '';
-  const tableCellSizeStyle = getSizeStylesForFontSize(state.fontSizeEm);
+  const isMarked = (rowIdx: number, idx: number) =>
+    idx === phaseEntry.phase.entries[rowIdx];
+  const tableCellSizeStyle = getSizeStylesForTablePerRow(state.tablePerRow);
   return (
     <table
       className={styles.table}
@@ -310,33 +315,89 @@ function SimpleTable({ phaseEntry }: { phaseEntry: PhaseEntry }) {
                 'Keine Beschreibung gefunden'}
             </td>
             <td
-              className={`${styles.table} ${styles.tableMarkerCell} ${cellClass(
-                rowIdx,
-                0
-              )}`}
+              className={`${styles.table} ${styles.tableMarkerCell}`}
               style={tableCellSizeStyle}
-            />
+            >
+              {isMarked(rowIdx, 0) && (
+                <>
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      true
+                    )}
+                  />
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      false
+                    )}
+                  />
+                </>
+              )}
+            </td>
             <td
-              className={`${styles.table} ${styles.tableMarkerCell} ${cellClass(
-                rowIdx,
-                1
-              )}`}
+              className={`${styles.table} ${styles.tableMarkerCell}`}
               style={tableCellSizeStyle}
-            />
+            >
+              {isMarked(rowIdx, 1) && (
+                <>
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      true
+                    )}
+                  />
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      false
+                    )}
+                  />
+                </>
+              )}
+            </td>
             <td
-              className={`${styles.table} ${styles.tableMarkerCell} ${cellClass(
-                rowIdx,
-                2
-              )}`}
+              className={`${styles.table} ${styles.tableMarkerCell}`}
               style={tableCellSizeStyle}
-            />
+            >
+              {isMarked(rowIdx, 2) && (
+                <>
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      true
+                    )}
+                  />
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      false
+                    )}
+                  />
+                </>
+              )}
+            </td>
             <td
-              className={`${styles.table} ${styles.tableMarkerCell} ${cellClass(
-                rowIdx,
-                3
-              )}`}
+              className={`${styles.table} ${styles.tableMarkerCell}`}
               style={tableCellSizeStyle}
-            />
+            >
+              {isMarked(rowIdx, 3) && (
+                <>
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      true
+                    )}
+                  />
+                  <div
+                    style={getCrossStyleForTablesPerRow(
+                      state.tablePerRow,
+                      false
+                    )}
+                  />
+                </>
+              )}
+            </td>
           </tr>
         ))}
       </tbody>
@@ -354,10 +415,25 @@ function displayPhase(
   return limits.min <= key && key <= limits.max;
 }
 
-function getSizeStylesForFontSize(fontSizeEm: number): {
+const tableScaling: {
+  [key: number]: {
+    fontSize: number;
+    cellSize: number;
+    crossSize: number;
+    crossOffset: number;
+  };
+} = {
+  1: { fontSize: 1.2, cellSize: 60, crossSize: 60, crossOffset: 0 },
+  2: { fontSize: 1.0, cellSize: 50, crossSize: 50, crossOffset: 0 },
+  3: { fontSize: 0.8, cellSize: 35, crossSize: 35, crossOffset: 0 },
+  4: { fontSize: 0.6, cellSize: 25, crossSize: 20, crossOffset: 0 },
+};
+
+function getSizeStylesForTablePerRow(tablePerRow: number): {
   [key: string]: string;
 } {
-  const sizePx = `${fontSizeEm * 50}px`;
+  const size = tableScaling[tablePerRow].cellSize;
+  const sizePx = `${size}px`;
   return {
     width: sizePx,
     height: sizePx,
@@ -369,14 +445,23 @@ function getSizeStylesForFontSize(fontSizeEm: number): {
 }
 
 function getFontSizeForTablePerRow(tablesPerRow: number): number {
-  const mapping: { [key: number]: number } = {
-    1: 1.2,
-    2: 1.2,
-    3: 0.8,
-    4: 0.6,
-  };
   const defaultSize = 1.0;
-  return mapping[tablesPerRow] ?? defaultSize;
+  return tableScaling[tablesPerRow].fontSize ?? defaultSize;
+}
+function getCrossStyleForTablesPerRow(
+  tablesPerRow: number,
+  firstCross: boolean
+): {
+  [key: string]: string;
+} {
+  const mapping = tableScaling[tablesPerRow];
+  return {
+    position: 'absolute',
+    border: '1px solid black',
+    width: `${mapping.crossSize}px`,
+    transform: `rotate(${!firstCross ? '-' : ''}45deg)`,
+    left: `${mapping.crossOffset}px`,
+  };
 }
 
 function minMaxKey(
@@ -401,6 +486,7 @@ function NoteArea() {
     <>
       <div
         style={{
+          marginTop: '100px',
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
