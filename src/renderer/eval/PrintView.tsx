@@ -468,15 +468,15 @@ function minMaxKey(
   birthday: string | undefined,
   obj: { [key: string]: unknown }
 ): [number, number] {
-  const phase =
-    birthday == null ? Number.MAX_SAFE_INTEGER : getPhaseForBirthday(birthday);
+  const phase = birthday == null ? null : getPhaseForBirthday(birthday);
   const keys = Object.keys(obj)
     .map((k) => parseInt(k, 10))
     .filter((v) => !Number.isNaN(v));
   if (keys.length === 0) return [7, 18];
   const min = Math.min(...keys);
   const max = Math.max(...keys);
-  return [min, Math.min(phase, max)];
+  if (phase == null) return [min, max];
+  return [Math.max(min, phase - 1), Math.min(max, phase + 1)];
 }
 
 function NoteArea() {
