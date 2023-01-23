@@ -548,6 +548,7 @@ function SignatureArea() {
     <>
       <div
         style={{
+          printColorAdjust: 'exact',
           width: '95%',
           display: 'flex',
           justifyContent: 'flex-end',
@@ -566,7 +567,12 @@ function SignatureArea() {
             {dayjs().format('DD.MM.YYYY')}
           </span>
           <div
-            style={{ height: '1px', backgroundColor: 'black', width: '100%' }}
+            style={{
+              height: '1px',
+              backgroundColor: 'black',
+              width: '100%',
+            }}
+            className={styles.printColorAdjust}
           />
           <span style={{ alignSelf: 'flex-end' }}>Unterschrift</span>
         </div>

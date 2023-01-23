@@ -69,6 +69,11 @@
 .category {
 }
 
+.printColorAdjust {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
 .pageGroup {
   page-break-inside: avoid;
   break-inside: avoid-page;
