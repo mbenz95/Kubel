@@ -12,10 +12,15 @@ import {
 import { proxy, useSnapshot } from 'valtio';
 import { useEffect } from 'react';
 import { SliderMarks } from 'antd/lib/slider';
-import { ExportOutlined, PrinterOutlined } from '@ant-design/icons';
+import {
+  ExportOutlined,
+  PrinterOutlined,
+  SignalFilled,
+} from '@ant-design/icons';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { v4 as uuidv4 } from 'uuid';
+import dayjs from 'dayjs';
 import { Graph } from './Graph';
 import { evalState } from './evalState';
 import { CategoryData } from './models';
@@ -33,6 +38,7 @@ type PrinterCategoryOption = {
 type PrinterState = {
   showGraph: boolean;
   showNotes: boolean;
+  showSignature: boolean;
   tablePerRow: number;
   categories: { [id: string]: PrinterCategoryOption };
   fontSizeEm: number;
@@ -41,6 +47,7 @@ type PrinterState = {
 const printerState = proxy<PrinterState>({
   showGraph: true,
   showNotes: true,
+  showSignature: true,
   categories: {},
   tablePerRow: 2,
   fontSizeEm: 1,
@@ -135,6 +142,7 @@ export default function PrintView() {
           <PrintCategories />
           <GraphToggle />
           <NoteToggle />
+          <SignatureToggle />
         </div>
       </div>
     </div>
@@ -150,6 +158,11 @@ function GraphToggle() {
 function NoteToggle() {
   const state = useSnapshot(printerState);
   return <>{state.showNotes && <NoteArea />}</>;
+}
+
+function SignatureToggle() {
+  const state = useSnapshot(printerState);
+  return <>{state.showSignature && <SignatureArea />}</>;
 }
 
 function PrintViewControls() {
@@ -197,23 +210,39 @@ function PrintViewControls() {
           />
         </div>
       ))}
-      <Checkbox
-        checked={state.showGraph}
-        onChange={(e) => {
-          printerState.showGraph = e.target.checked;
-        }}
-      >
-        <Title level={4}>Graph anzeigen</Title>
-      </Checkbox>
-      <Checkbox
-        style={{ margin: '0', marginBottom: '24px' }}
-        checked={state.showNotes}
-        onChange={(e) => {
-          printerState.showNotes = e.target.checked;
-        }}
-      >
-        <Title level={4}>Notizen anzeigen</Title>
-      </Checkbox>
+      <div>
+        <Checkbox
+          style={{ margin: '0' }}
+          checked={state.showGraph}
+          onChange={(e) => {
+            printerState.showGraph = e.target.checked;
+          }}
+        >
+          <Title level={5}>Graph anzeigen</Title>
+        </Checkbox>
+      </div>
+      <div>
+        <Checkbox
+          style={{ margin: '0' }}
+          checked={state.showNotes}
+          onChange={(e) => {
+            printerState.showNotes = e.target.checked;
+          }}
+        >
+          <Title level={5}>Notizen anzeigen</Title>
+        </Checkbox>
+      </div>
+      <div>
+        <Checkbox
+          style={{ margin: '0', marginBottom: '24px' }}
+          checked={state.showSignature}
+          onChange={(e) => {
+            printerState.showSignature = e.target.checked;
+          }}
+        >
+          <Title level={5}>Unterschriftszeile anzeigen</Title>
+        </Checkbox>
+      </div>
       <div className={styles.sliderContainer}>
         <Text>Tabellen pro Zeile</Text>
         <Slider
@@ -476,7 +505,10 @@ function minMaxKey(
   const min = Math.min(...keys);
   const max = Math.max(...keys);
   if (phase == null) return [min, max];
-  return [Math.max(min, phase - 1), Math.min(max, phase + 1)];
+  return [
+    Math.max(min, phase - 1),
+    Math.max(Math.min(max, phase + 1), min + 1),
+  ];
 }
 
 function NoteArea() {
@@ -505,6 +537,38 @@ function NoteArea() {
           }}
         >
           {note}
+        </div>
+      </div>
+    </>
+  );
+}
+
+function SignatureArea() {
+  return (
+    <>
+      <div
+        style={{
+          width: '95%',
+          display: 'flex',
+          justifyContent: 'flex-end',
+          marginTop: '40px',
+          marginBottom: '32px',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            width: '50%',
+          }}
+        >
+          <span style={{ font: '1.3em "Arial", sans-serif' }}>
+            {dayjs().format('DD.MM.YYYY')}
+          </span>
+          <div
+            style={{ height: '1px', backgroundColor: 'black', width: '100%' }}
+          />
+          <span style={{ alignSelf: 'flex-end' }}>Unterschrift</span>
         </div>
       </div>
     </>
