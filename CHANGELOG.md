@@ -1,3 +1,7 @@
+## 1.7.3
+
+- Add signature line
+
 ## 1.7.2
 
 - Print/Export view: Default phases are from (phase - 1) to (phase + 1) if the birthday is set
