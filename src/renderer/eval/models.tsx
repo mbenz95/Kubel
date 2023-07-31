@@ -60,7 +60,7 @@ export type EntryDefinition = {
   additionalInformation?: string;
 };
 
-function emptyPhase(def: PhaseDefinition): Phase {
+export function emptyPhase(def: PhaseDefinition): Phase {
   const entries = def.entries.map(() => -1);
   return {
     entries,

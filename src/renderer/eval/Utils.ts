@@ -2,10 +2,15 @@ import dayjs from 'dayjs';
 import {
   BIRTHDAY_DATE_FORMAT,
   Category,
+  CategoryData,
   CategoryDefinition,
+  Person,
   Phase,
   PhaseDefinition,
   Phases,
+  emptyCategory,
+  emptyPhase,
+  Selection
 } from './models';
 
 export type PhaseEntry = {
@@ -85,4 +90,49 @@ export function filterPhasesByAge(
 
 export function getCurrentPhaseByBirthday(birthday: string): number {
   return getPhasesForAgeInMonths(ageInMonth(birthday));
+}
+
+// mutates person, add missing categories, phases and entries
+export function syncPersonWithCategoryDef(person: Person, categoryData: CategoryData) {
+  const categoryKeys = Object.keys(categoryData)
+  for (const key of categoryKeys) {
+    if (person.categories[key] == null) {
+      person.categories[key] = emptyCategory(categoryData[key])
+    } else {
+      const phaseDefs = categoryData[key].phases
+      const phases = person.categories[key].phases
+      for (const phaseKey of Object.keys(phaseDefs)) {
+        if (phases[phaseKey] == null) {
+          phases[phaseKey] = emptyPhase(phaseDefs[phaseKey])
+        } else {
+          const personPhaseEntries = phases[phaseKey].entries
+          const phaseDefEntries = phaseDefs[phaseKey].entries
+          if (personPhaseEntries.length < phaseDefEntries.length) {
+            // fill up arrays so that more entries don't cause issues
+            for (let i = personPhaseEntries.length; i < phaseDefEntries.length; i++) {
+              personPhaseEntries.push(Selection.Unset)
+            }
+          } else if (personPhaseEntries.length > phaseDefEntries.length) {
+            // remove entries
+            personPhaseEntries.splice(phaseDefEntries.length)
+          }
+        }
+      }
+    }
+  }
+  for (const personCategoryKey of Object.keys(person.categories)) {
+    if (categoryData[personCategoryKey] == null) {
+      // remove missing category
+      delete person.categories[personCategoryKey]
+    } else {
+      // remove missing phase
+      const phaseDefs = categoryData[personCategoryKey].phases
+      const phases = person.categories[personCategoryKey].phases
+      for (const personPhaseKey of Object.keys(phases)) {
+        if (phaseDefs[personPhaseKey] == null) {
+          delete phases[personPhaseKey]
+        }
+      }
+    }
+  }
 }

@@ -17,7 +17,7 @@ import {
   Tooltip,
   Typography,
 } from 'antd';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { evalState } from 'renderer/eval/evalState';
 import { useSnapshot } from 'valtio';
@@ -38,6 +38,7 @@ import {
   createPhaseEntries,
   getCurrentPhaseByBirthday,
   PhaseEntry,
+  syncPersonWithCategoryDef,
 } from './Utils';
 import NoteArea from './NoteArea';
 
@@ -320,6 +321,12 @@ export default function PersonEvaluation({
     evalState.categoryData = categoryData;
   });
   const { person } = useSnapshot(evalState);
+  useEffect(() => {
+    if (evalState.person != null && categoryData != null) {
+      console.log("Syncing person data with category...")
+      syncPersonWithCategoryDef(evalState.person, categoryData)
+    }
+  }, [person, categoryData])
 
   if (id == null || data == null) {
     navigate('/');

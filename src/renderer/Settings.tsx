@@ -108,7 +108,8 @@ function Changelog() {
   useEffect(() => {
     const loadData = async () => {
       const data = await fetch(
-        'https://kubel-releases.s3.eu-central-1.amazonaws.com/CHANGELOG.md'
+        'https://kubel-releases.s3.eu-central-1.amazonaws.com/CHANGELOG.md',
+        { cache: 'no-cache' }
       );
       const text = await data.text();
       setChangelog(text);

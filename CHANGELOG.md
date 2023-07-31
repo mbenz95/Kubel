@@ -1,3 +1,11 @@
+## 1.7.5
+
+- Fix removing phase entries causing wrong info to be shown
+
+## 1.7.4
+
+- Adding/removing categories & phases is now supported for existing person entries 
+
 ## 1.7.3
 
 - Add signature line
