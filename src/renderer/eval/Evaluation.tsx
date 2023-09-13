@@ -37,6 +37,7 @@ import styles from './Person.module.css';
 import {
   createPhaseEntries,
   getCurrentPhaseByBirthday,
+  getPhaseForBirthday,
   PhaseEntry,
   syncPersonWithCategoryDef,
 } from './Utils';
@@ -374,6 +375,9 @@ function BirthdayDisplay() {
     setEdit(false);
     const formatted = date?.format(BIRTHDAY_DATE_FORMAT);
     if (evalState.person != null) evalState.person.birthday = formatted;
+    if (evalState.person?.displaySettings != null && formatted != null) {
+      evalState.person.displaySettings.baseline = person?.birthday != null ? getPhaseForBirthday(formatted) : 15
+    }
   };
   const onCancel = () => {
     setDate(defaultDate); // reset to default

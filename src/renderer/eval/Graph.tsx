@@ -13,7 +13,7 @@ import { useSnapshot } from 'valtio';
 import { evalState } from './evalState';
 import { DisplaySettings, Person, Phase, Selection } from './models';
 import styles from './Person.module.css';
-import { filterPhasesByAge } from './Utils';
+import { filterPhasesByAge, getPhaseForBirthday } from './Utils';
 
 export const Graph = ({ showControls }: { showControls: boolean }) => {
   const { person, categoryData } = useSnapshot(evalState);
@@ -22,11 +22,6 @@ export const Graph = ({ showControls }: { showControls: boolean }) => {
     if (evalState.person == null || v == null) return;
     setInitialDisplaysettings(evalState.person).baseline = v;
   };
-  const setMinValue = (v: number | null) => {
-    if (evalState.person == null || v == null) return;
-    setInitialDisplaysettings(evalState.person).minValue = v;
-  };
-  const minValue = person?.displaySettings?.minValue ?? 6;
   if (person == null || categoryData == null) throw new Error('no data');
 
   const data = Object.entries(person.categories).map(([id, category]) => {
@@ -36,7 +31,7 @@ export const Graph = ({ showControls }: { showControls: boolean }) => {
       .reduce((p, c) => p + c, 0);
     return {
       name: categoryData[id]?.name ?? ` Kategorie nicht gefunden (${id})`,
-      result: Math.round(100 * (totalResult + minValue)) / 100,
+      result: totalResult,
       baseline,
     };
   });
@@ -50,13 +45,6 @@ export const Graph = ({ showControls }: { showControls: boolean }) => {
             value={baseline}
             onChange={setBaseline}
             min={0}
-          />
-          <InputNumber
-            addonBefore="Min-Wert"
-            value={minValue}
-            onChange={setMinValue}
-            min={0}
-            max={18}
           />
         </Space>
       )}
@@ -119,7 +107,6 @@ export function calculateResult(phase: Phase): number {
 
 function setInitialDisplaysettings(person: Person): DisplaySettings {
   person.displaySettings ??= {
-    minValue: 6,
     baseline: 15,
   };
   return person.displaySettings;

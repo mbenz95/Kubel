@@ -17,7 +17,6 @@ export type Person = {
 };
 
 export type DisplaySettings = {
-  minValue: number;
   baseline: number;
 };
 

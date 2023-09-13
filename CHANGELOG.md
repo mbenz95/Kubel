@@ -1,10 +1,16 @@
+## 1.7.6
+
+- Add categories.json overwrite in settings
+- Remove min-value option
+- Calculate 'Entwicklungsstand' based on birthday (on enter birthday)
+
 ## 1.7.5
 
 - Fix removing phase entries causing wrong info to be shown
 
 ## 1.7.4
 
-- Adding/removing categories & phases is now supported for existing person entries 
+- Adding/removing categories & phases is now supported for existing person entries
 
 ## 1.7.3
 

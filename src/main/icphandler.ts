@@ -1,4 +1,4 @@
-import { ipcMain, app, dialog } from 'electron';
+import { ipcMain, app, dialog, BrowserWindow } from 'electron';
 import { access, mkdir, readFile, writeFile, copyFile } from 'fs/promises';
 import path from 'path';
 import { checkUpdate, runUpdate } from './updater';
@@ -12,6 +12,9 @@ const kubelDataDir = path.join(appDataDir, 'KuBel');
 
 const error: any = {};
 // create kubel dir in appdata if not exists and copy data and category file
+
+let initialCategoriesFile: string
+let targetCategoriesFile: string
 (async () => {
   try {
     await access(kubelDataDir);
@@ -30,8 +33,8 @@ const error: any = {};
   const configDefaultFile = path.join(appResourceDir, 'config.json');
   const configFile = path.join(kubelDataDir, 'config.json');
 
-  const initialCategoriesFile = path.join(appResourceDir, 'categories.json');
-  const targetCategoriesFile = path.join(kubelDataDir, 'categories.json');
+  initialCategoriesFile = path.join(appResourceDir, 'categories.json');
+  targetCategoriesFile = path.join(kubelDataDir, 'categories.json');
 
   async function copyDefaultFile(dataFile: string, defaultFile: string) {
     try {
@@ -51,7 +54,7 @@ const error: any = {};
   copyDefaultFile(targetCategoriesFile, initialCategoriesFile);
 })();
 
-export default function setupIcpHandler() {
+export default function setupIcpHandler(mainWindow: BrowserWindow) {
   ipcMain.handle('loadfile', async (_event, file) => {
     try {
       const data = await readFile(path.join(kubelDataDir, file));
@@ -95,19 +98,26 @@ export default function setupIcpHandler() {
     const info = await runUpdate();
     return info?.updateInfo;
   });
+
+  ipcMain.handle('printToPdf', async (evnt, options) => {
+    const saveSelection = await dialog.showSaveDialog({
+      title: 'Wähle Datei',
+      defaultPath: options.name,
+      filters: [{ name: 'PDF', extensions: ['pdf'] }],
+    });
+    if (!saveSelection.canceled && saveSelection.filePath != null) {
+      console.log('Save destination ', saveSelection.filePath);
+      const data = await evnt.sender.printToPDF({
+        pageSize: 'A4',
+      });
+      await writeFile(saveSelection.filePath, data);
+    }
+  });
+  
+  ipcMain.handle('overwriteCategories', async (evnt, options) => {
+    await copyFile(initialCategoriesFile, targetCategoriesFile);
+    mainWindow.reload()
+  })
+
 }
 
-ipcMain.handle('printToPdf', async (evnt, options) => {
-  const saveSelection = await dialog.showSaveDialog({
-    title: 'Wähle Datei',
-    defaultPath: options.name,
-    filters: [{ name: 'PDF', extensions: ['pdf'] }],
-  });
-  if (!saveSelection.canceled && saveSelection.filePath != null) {
-    console.log('Save destination ', saveSelection.filePath);
-    const data = await evnt.sender.printToPDF({
-      pageSize: 'A4',
-    });
-    await writeFile(saveSelection.filePath, data);
-  }
-});

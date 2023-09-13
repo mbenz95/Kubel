@@ -1,4 +1,4 @@
-import { Alert, Button, Card, Checkbox, Collapse, Divider, Typography } from 'antd';
+import { Alert, Button, Card, Checkbox, Collapse, Divider, Popconfirm, Tooltip, Typography, message } from 'antd';
 import Title from 'antd/lib/typography/Title';
 import { useEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
@@ -21,10 +21,8 @@ export default function SettingsPage() {
       <Title level={2}>Einstellungen</Title>
       <Card title="Version &amp; Updates">
         <UpdateSection />
-        {/*
         <Divider />
         <OverwriteCategories />
-       */}
       </Card>
     </div>
   );
@@ -128,11 +126,26 @@ function Changelog() {
 }
 
 function OverwriteCategories() {
+  const [loading, setLoading] = useState(false)
+  const overwrite = () => {
+    setLoading(true)
+    window.electron.ipcRenderer.invoke(
+      'overwriteCategories'
+    )
+    setTimeout(() => {
+      // overwrite reloads to avoid having to update the categories so 
+      // this won't be running anyway...
+      setLoading(false)
+    }, 500)
+  }
   return (
-    <>
-      <Checkbox>
-        Phasen Information bei Update überschreiben (Standard: Aktiviert)
-      </Checkbox>
-    </>
+    <Popconfirm 
+      title="Achtung!" 
+      description="Manuelle Änderungen in der categories.json datei gehen verloren!"
+      onConfirm={overwrite}>
+      <Button danger loading={loading}>
+        Kategorien überschreiben
+      </Button>
+    </Popconfirm>
   );
 }

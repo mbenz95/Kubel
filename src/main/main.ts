@@ -76,7 +76,7 @@ const createWindow = async () => {
     },
   });
 
-  setupIcpHandler();
+  setupIcpHandler(mainWindow);
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
