@@ -1,10 +1,23 @@
-import { Alert, Button, Card, Checkbox, Collapse, Divider, Popconfirm, Tooltip, Typography, message } from 'antd';
+import {
+  Alert,
+  Button,
+  Card,
+  Checkbox,
+  Collapse,
+  Divider,
+  Popconfirm,
+  Tooltip,
+  Typography,
+  message,
+} from 'antd';
 import Title from 'antd/lib/typography/Title';
 import { useEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
 import ReactMarkdown from 'react-markdown';
+import { CheckboxChangeEvent } from 'antd/es/checkbox';
 import { updateState } from './update/UpdateService';
 import styles from './Settings.module.css';
+import { config, saveConfig } from './ConfigState';
 
 const { Text } = Typography;
 const { Panel } = Collapse;
@@ -21,8 +34,11 @@ export default function SettingsPage() {
       <Title level={2}>Einstellungen</Title>
       <Card title="Version &amp; Updates">
         <UpdateSection />
-        <Divider />
+      </Card>
+      <Card title="Andere Einstellungen" style={{ marginTop: '12px' }}>
         <OverwriteCategories />
+        <Divider />
+        <OpenPdfAfterSaveConfig />
       </Card>
     </div>
   );
@@ -126,26 +142,40 @@ function Changelog() {
 }
 
 function OverwriteCategories() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const overwrite = () => {
-    setLoading(true)
-    window.electron.ipcRenderer.invoke(
-      'overwriteCategories'
-    )
+    setLoading(true);
+    window.electron.ipcRenderer.invoke('overwriteCategories');
     setTimeout(() => {
-      // overwrite reloads to avoid having to update the categories so 
+      // overwrite reloads to avoid having to update the categories so
       // this won't be running anyway...
-      setLoading(false)
-    }, 500)
-  }
+      setLoading(false);
+    }, 500);
+  };
   return (
-    <Popconfirm 
-      title="Achtung!" 
+    <Popconfirm
+      title="Achtung!"
       description="Manuelle Änderungen in der categories.json datei gehen verloren!"
-      onConfirm={overwrite}>
+      onConfirm={overwrite}
+    >
       <Button danger loading={loading}>
         Kategorien überschreiben
       </Button>
     </Popconfirm>
+  );
+}
+
+function OpenPdfAfterSaveConfig() {
+  const cfg = useSnapshot(config);
+  const change = (evt: CheckboxChangeEvent) => {
+    config.openPdfAfterSave = evt.target.checked;
+    (async () => {
+      await saveConfig();
+    })();
+  };
+  return (
+    <Checkbox checked={cfg.openPdfAfterSave} onChange={change}>
+      PDF nach dem Speichern öffnen
+    </Checkbox>
   );
 }

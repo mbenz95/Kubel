@@ -1,7 +1,8 @@
-import { ipcMain, app, dialog, BrowserWindow } from 'electron';
+import { ipcMain, app, dialog, BrowserWindow, shell } from 'electron';
 import { access, mkdir, readFile, writeFile, copyFile } from 'fs/promises';
 import path from 'path';
 import { checkUpdate, runUpdate } from './updater';
+
 
 const appDataDir =
   process.env.APPDATA ||
@@ -111,6 +112,10 @@ export default function setupIcpHandler(mainWindow: BrowserWindow) {
         pageSize: 'A4',
       });
       await writeFile(saveSelection.filePath, data);
+      const openFile = options.openFile ?? true
+      if (openFile) {
+        await shell.openPath(saveSelection.filePath)
+      }
     }
   });
   

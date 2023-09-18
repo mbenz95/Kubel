@@ -4,10 +4,11 @@ export type Config = {
   personlist?: {
     order?: 'name' | 'birthday';
     orderdir?: 'asc' | 'desc';
-  };
+  },
+  openPdfAfterSave: boolean
 };
 
-export const config = proxy<Config>({});
+export const config = proxy<Config>({ openPdfAfterSave: true });
 
 export async function loadConfig(): Promise<boolean> {
   const result: Config | { error: string } =
@@ -16,6 +17,7 @@ export async function loadConfig(): Promise<boolean> {
     return false;
   }
   config.personlist = result.personlist;
+  config.openPdfAfterSave = result.openPdfAfterSave ?? true;
   return true;
 }
 

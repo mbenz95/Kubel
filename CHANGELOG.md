@@ -1,3 +1,8 @@
+## 1.7.7
+
+- Improve print view (show categories on separate page, size adjustements)
+- Add options to open pdf after save in default browser
+
 ## 1.7.6
 
 - Add categories.json overwrite in settings

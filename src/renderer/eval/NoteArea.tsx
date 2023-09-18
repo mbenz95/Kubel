@@ -12,14 +12,14 @@ export default function NoteArea() {
     }
   };
   return (
-    <>
+    <div style={{marginTop: "100px", marginBottom: "48px"}}>
       <Typography.Title level={3}>Notizen</Typography.Title>
       <textarea
-        style={{ width: '100%', font: '14pt large', marginBottom: '128px' }}
+        style={{ width: '100%', font: '14pt large' }}
         value={note}
         rows={20}
         onChange={updateNodeText}
       />
-    </>
+    </div>
   );
 }

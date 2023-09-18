@@ -66,6 +66,14 @@
   gap: 20px;
 }
 
+.categoryTitle {
+  margin-top: 15px;
+}
+
+.categoryTitleNonFirst {
+  page-break-before: always;
+}
+
 .category {
 }
 
@@ -79,6 +87,14 @@
   break-inside: avoid-page;
 }
 
+.noteArea {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* Printing + export styles */
 @media print {
   .printArea {
@@ -87,5 +103,9 @@
   }
   .printButton {
     display: none !important;
+  }
+  .noteArea {
+    /* no idea... */
+    margin-top: 300px;
   }
 }

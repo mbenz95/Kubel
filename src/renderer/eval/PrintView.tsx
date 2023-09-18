@@ -21,6 +21,7 @@ import {
 // @ts-ignore
 import { v4 as uuidv4 } from 'uuid';
 import dayjs from 'dayjs';
+import { config } from 'renderer/ConfigState';
 import { Graph } from './Graph';
 import { evalState } from './evalState';
 import { CategoryData } from './models';
@@ -61,9 +62,15 @@ function PrintCategories() {
     <div style={{ marginTop: '10px' }}>
       {categories
         .filter(([id]) => state.categories[id]?.enabled ?? false)
-        .map(([id, categoryDef]) => (
+        .map(([id, categoryDef], idx) => (
           <div key={id}>
-            <Title level={3} key={id} style={{ marginTop: '15px' }}>
+            <Title
+              level={3}
+              key={id}
+              className={`${styles.categoryTitle} ${
+                idx !== 0 ? styles.categoryTitleNonFirst : ''
+              }`}
+            >
               {categoryDef.name}
             </Title>
             <hr color="black" />
@@ -76,6 +83,7 @@ function PrintCategories() {
 
 export default function PrintView() {
   const evalStateSnapshot = useSnapshot(evalState);
+  const cfg = useSnapshot(config);
   const { person, categoryData: catData } = evalStateSnapshot;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const categories: CategoryData = catData ?? {};
@@ -100,7 +108,10 @@ export default function PrintView() {
 
   const onSavePdfClick = async () => {
     const filename = `kubel-${evalState.person?.name}.pdf`;
-    window.electron.ipcRenderer.invoke('printToPdf', { name: filename });
+    window.electron.ipcRenderer.invoke('printToPdf', {
+      name: filename,
+      openFile: cfg.openPdfAfterSave,
+    });
   };
 
   return (
@@ -136,7 +147,7 @@ export default function PrintView() {
       <div className={styles.printAreaContainer}>
         <div className={styles.printArea}>
           <p style={{ float: 'right' }}>
-            Generiert am {new Date().toLocaleDateString('de-DE')}
+            Generiert am {dayjs().format('DD.MM.YYYY')}
           </p>
           <Title level={1}>{person?.name}</Title>
           <PrintCategories />
@@ -453,9 +464,9 @@ const tableScaling: {
   };
 } = {
   1: { fontSize: 1.2, cellSize: 60, crossSize: 60, crossOffset: 0 },
-  2: { fontSize: 1.0, cellSize: 50, crossSize: 50, crossOffset: 0 },
-  3: { fontSize: 0.8, cellSize: 35, crossSize: 35, crossOffset: 0 },
-  4: { fontSize: 0.6, cellSize: 25, crossSize: 20, crossOffset: 0 },
+  2: { fontSize: 0.9, cellSize: 45, crossSize: 45, crossOffset: 0 },
+  3: { fontSize: 0.7, cellSize: 30, crossSize: 30, crossOffset: 0 },
+  4: { fontSize: 0.5, cellSize: 20, crossSize: 20, crossOffset: 0 },
 };
 
 function getSizeStylesForTablePerRow(tablePerRow: number): {
@@ -516,15 +527,7 @@ function NoteArea() {
   const note = person?.note ?? '';
   return (
     <>
-      <div
-        style={{
-          marginTop: '100px',
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-        }}
-      >
+      <div className={styles.noteArea}>
         <Typography.Title level={3} style={{ marginLeft: '24px' }}>
           Notizen
         </Typography.Title>
