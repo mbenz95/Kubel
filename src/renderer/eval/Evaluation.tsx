@@ -121,7 +121,10 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
     // const newCategory: Category = JSON.parse(JSON.stringify(personCategory));
     const personState = evalState.person;
     if (personState != null) {
-      personState.categories[categoryId].phases[phase].entries[entry] = sel;
+      const oldSel = personCategory.phases[phase].entries[entry];
+      // set to unset if clicking on same selection (toggle)
+      const newSel = oldSel === sel ? Selection.Unset : sel;
+      personState.categories[categoryId].phases[phase].entries[entry] = newSel;
 
       handleAutomaticPhaseCompletion(
         personState.categories[categoryId],
@@ -224,34 +227,34 @@ function CategoryTab({ categoryId }: { categoryId: string }) {
                     <div className={styles.col}>
                       <Radio.Button
                         value="0"
-                        onChange={() =>
+                        onClick={() =>
                           selectionChange(phase.id, rowIdx, Selection.Do)
                         }
                       />
                     </div>
-                    <div
-                      className={styles.col}
-                      onChange={() =>
+                    <div className={styles.col}>
+                    <Radio.Button
+                      value="1"
+                      onClick={() =>
                         selectionChange(phase.id, rowIdx, Selection.Partially)
                       }
-                    >
-                      <Radio.Button value="1" />
+                    />
                     </div>
-                    <div
-                      className={styles.col}
-                      onChange={() =>
-                        selectionChange(phase.id, rowIdx, Selection.Dont)
-                      }
-                    >
-                      <Radio.Button value="2" />
+                    <div className={styles.col}>
+                      <Radio.Button
+                        value="2"
+                        onClick={() =>
+                          selectionChange(phase.id, rowIdx, Selection.Dont)
+                        }
+                      />
                     </div>
-                    <div
-                      className={styles.col}
-                      onChange={() =>
-                        selectionChange(phase.id, rowIdx, Selection.Unknown)
-                      }
-                    >
-                      <Radio.Button value="3" />
+                    <div className={styles.col}>
+                      <Radio.Button
+                        value="3"
+                        onClick={() =>
+                          selectionChange(phase.id, rowIdx, Selection.Unknown)
+                        }
+                      />
                     </div>
                   </Radio.Group>
                 </div>
@@ -324,10 +327,10 @@ export default function PersonEvaluation({
   const { person } = useSnapshot(evalState);
   useEffect(() => {
     if (evalState.person != null && categoryData != null) {
-      console.log("Syncing person data with category...")
-      syncPersonWithCategoryDef(evalState.person, categoryData)
+      console.log('Syncing person data with category...');
+      syncPersonWithCategoryDef(evalState.person, categoryData);
     }
-  }, [person, categoryData])
+  }, [person, categoryData]);
 
   if (id == null || data == null) {
     navigate('/');
@@ -371,12 +374,13 @@ function BirthdayDisplay() {
       ? undefined
       : dayjs(person.birthday, BIRTHDAY_DATE_FORMAT);
   const [date, setDate] = useState(defaultDate());
-  const onAccept = () => {
+  const acceptDate = (newDate: dayjs.Dayjs) => {
     setEdit(false);
-    const formatted = date?.format(BIRTHDAY_DATE_FORMAT);
+    const formatted = newDate?.format(BIRTHDAY_DATE_FORMAT);
     if (evalState.person != null) evalState.person.birthday = formatted;
     if (evalState.person?.displaySettings != null && formatted != null) {
-      evalState.person.displaySettings.baseline = person?.birthday != null ? getPhaseForBirthday(formatted) : 15
+      evalState.person.displaySettings.baseline =
+        person?.birthday != null ? getPhaseForBirthday(formatted) : 15;
     }
   };
   const onCancel = () => {
@@ -385,6 +389,9 @@ function BirthdayDisplay() {
   };
   const onDateChanged = (curDate: dayjs.Dayjs | null) => {
     setDate(curDate ?? undefined);
+    if (curDate != null) {
+      acceptDate(curDate) // auto accept if valid date was chosen
+    }
   };
   const dateParsed =
     date == null ? undefined : dayjs(date, BIRTHDAY_DATE_FORMAT);
@@ -398,14 +405,6 @@ function BirthdayDisplay() {
               onChange={onDateChanged}
               format={BIRTHDAY_DATE_FORMAT}
             />
-            <Tooltip title="Ok">
-              <Button
-                type="text"
-                shape="circle"
-                icon={<CheckOutlined />}
-                onClick={onAccept}
-              />
-            </Tooltip>
             <Tooltip title="Abbrechen">
               <Button
                 type="text"
