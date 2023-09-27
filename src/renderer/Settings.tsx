@@ -113,6 +113,14 @@ function UpdateSection() {
       ) : null}
 
       <Changelog />
+      <Button
+        type="link"
+        target="_blank"
+        href="https://github.com/mbenz95/Kubel"
+        style={{ marginTop: '12px' }}
+      >
+        View source code on GitHub
+      </Button>
     </>
   );
 }
